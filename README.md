@@ -1,4 +1,3 @@
-# Java
-Full internship
+# Java Full internship
 
-mentor: amandeep
+# mentor: amandeep
