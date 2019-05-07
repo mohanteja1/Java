@@ -1,6 +1,9 @@
 ### **JRE , JDK ,JVM**
 
+
+
 1. compilation process:
+   1. javac converts java code to class
    1. jvm resides on the ram ,class loader loads the classes into ram
    1. Byte code verifier the verifies the code for security
    1. execution engine contain JIT converts the bytecode into machine code
