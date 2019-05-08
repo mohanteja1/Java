@@ -2,13 +2,13 @@
 
 ![JVM memory model](Java-Memory-Model.png)
 
- 1.memory management Young Generation
-   1. new objects created goes to YG
-   1.YG divided into two parts EDEN and TWO SURVIVOR memory spaces
-   1.  newly created objects --> Eden , if eden full minor garbage collection 
+ 1. memory management Young Generation
+      1. new objects created goes to YG
+      1. YG divided into two parts EDEN and TWO SURVIVOR memory spaces
+      1.  newly created objects --> Eden , if eden full minor garbage collection 
        is performed 
-    1. MinorGC checks survivor objects and move them to Survivor spaces
-    1. if the Survivor objects survive many cycle then moved to old gen
+      1. MinorGC checks survivor objects and move them to Survivor spaces
+      1. if the Survivor objects survive many cycle then moved to old gen
      
  1. Memory management in Old gen
     1.contains Long-lived and survived obj after many rounds of minor GC

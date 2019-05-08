@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="jvm,jre,jdk completed">
-      <change afterPath="$PROJECT_DIR$/src/week1/2.MemoryManagement/Java-Memory-Model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week1/2.MemoryManagement/memorymanagement.png" afterDir="false" />
+    <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/1.JDK-JRE-JVM/Program2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/week1/2.MemoryManagement/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/2.MemoryManagement/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/src/week1/2.MemoryManagement/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="354">
-                <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+              <first_editor relative-caret-position="187">
+                <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -212,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557222971498</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="java memory management completed and documented">
+      <created>1557307300738</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557307300738</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -287,7 +291,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created repository structure" />
     <MESSAGE value="jvm,jre,jdk completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="jvm,jre,jdk completed" />
+    <MESSAGE value="java memory management completed and documented" />
+    <option name="LAST_COMMIT_MESSAGE" value="java memory management completed and documented" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/week1/3.NamingConventions/README.md">
@@ -454,8 +459,8 @@
     <entry file="file://$PROJECT_DIR$/src/week1/2.MemoryManagement/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="354">
-            <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>
