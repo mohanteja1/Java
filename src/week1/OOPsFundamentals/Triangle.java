@@ -19,5 +19,7 @@ public class Triangle extends AbstractUse{
     public int getAreaOfTraingle() {
         int s= (side1+side2+side3)/2;
         return (int) Math.round(Math.sqrt(s*(s-side1)*(s-side3)*(s-side2)));
+
+
     }
 }
