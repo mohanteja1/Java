@@ -1,3 +1,6 @@
+
+
+
 ### java memory model
 
 ![JVM memory model](Java-Memory-Model.png)

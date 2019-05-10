@@ -11,7 +11,43 @@
  
 
 **JVM**
+
+
+###### JVM architecture
      
+  ![jvm architecture](jvm-architecture.png)
+  
+  1. Classloader
+      
+       1. Bootstrap ClassLoader
+       1. Extension ClassLoader
+       1. System/Application ClassLoader
+       1. create your own class loaders[ link 1 ](https://www.baeldung.com/java-classloaders
+)          [link 2](https://www.journaldev.com/349/java-classloader
+)                   
+ 
+  1. Class(Method) Area
+  1. Heap
+  1. Stack
+  1. Program counter
+  1. Native Method Stack
+  1. Execution Engine
+       1. A virtual processor
+       2. Interpreter
+       3. Just in Time compiler
+  1. Java Native Interface
+              
+              JNI is a framework which provides an interface to communicate with 
+              another app writtern in another language like c++ c assembly
+              ex java and console interaction is done through JNI
+              
+              implement your own JNI connections with native apps
+               links:
+               https://www.baeldung.com/jni
+         
+       
+       
+  
      Specification , implementation , Runtime instance
       
 **JRE**

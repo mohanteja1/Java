@@ -1,10 +1,10 @@
 package week1.JdkJreJvm;
-class Program1{
+class Driver {
     public static void main(String args[]){
         int i=10;
         System.out.println(i);
-        Program3 program1 = new Program3();
-        Program2 program2 = new Program2();
+        DuplicateString program1 = new DuplicateString();
+        SqureValue program2 = new SqureValue();
 
         System.out.println(program1.duplicator("abc"));
         System.out.println(program2.function1(9));
