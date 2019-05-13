@@ -15,4 +15,10 @@
        
        
 1. Interface (100%)
-  
+      1. blueprint of a class
+      1. has static constants ,only abstract methods 
+      1. also represents Is a relationship
+      1. since jdk8 can have default and static methods , can have private methods
+       
+             Rules to define private methods in java
+                1. 
