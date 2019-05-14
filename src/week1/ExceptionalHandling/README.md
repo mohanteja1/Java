@@ -134,6 +134,9 @@ types of exception:
 
 
 1. Method overloading while exception handling
+     two rules:
+        
+
 
 1. Custome exceptions
 
