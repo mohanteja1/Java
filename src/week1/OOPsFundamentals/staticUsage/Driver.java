@@ -15,8 +15,6 @@ class B extends A{
     }
 }
 
-
-
 public class Driver {
 
     public static void main(String arg[]){
