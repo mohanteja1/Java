@@ -8,7 +8,7 @@ public class Hotel {
       String Address ;
       List<Food> fooditemsAvailable;
 
-      
+
 
 
 }
