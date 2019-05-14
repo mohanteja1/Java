@@ -137,4 +137,6 @@ types of exception:
 
 1. Custome exceptions
 
+    [useful link](https://www.baeldung.com/java-new-custom-exception)
+
 
