@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/Deque/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Set/HashSet/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Set/LinkedHashSet/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Set/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Set/SortedSet/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Set/TreeSet/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/DriverProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Hotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/ExceptionalHandling/CustomException/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/ExceptionalHandling/CustomException/MyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/ExceptionalHandling/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/ExceptionalHandling/Exceptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/ExceptionalHandling/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/ExceptionalHandling/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/1.Collections/Collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/Collections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/1.Collections/List/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/1.Collections/Queue/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/List/Stack/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/1.Collections/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/List/LinkedList/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/1.Collections/Set/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/List/Vector/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/1.Collections/Set/TreeSet/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/List/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/ArrayList.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,36 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/Vector/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/Deque/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -116,11 +72,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/week2/Collections/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -128,6 +79,66 @@
                 <caret line="3" selection-start-line="3" selection-end-line="3" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Food.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/DriverProgram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Hotel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <folding>
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,10 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/week1/2.MemoryManagement/README.md" />
-        <option value="$PROJECT_DIR$/src/week1/4.OOPsFundamentals/Shape.java" />
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/RectangleAbstract.java" />
-        <option value="$PROJECT_DIR$/src/week1/JDK-JRE-JVM/Program1.java" />
         <option value="$PROJECT_DIR$/src/week1/JdkJreJvm/Program2.java" />
         <option value="$PROJECT_DIR$/src/week1/JdkJreJvm/Program3.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/AbstractUse.java" />
@@ -198,6 +205,10 @@
         <option value="$PROJECT_DIR$/src/week1/ExceptionalHandling/Exceptions.java" />
         <option value="$PROJECT_DIR$/src/week1/ExceptionalHandling/README.md" />
         <option value="$PROJECT_DIR$/src/week2/1.Collections/README.md" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/DriverProgram.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Food.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Customer.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Hotel.java" />
       </list>
     </option>
   </component>
@@ -245,6 +256,15 @@
               <item name="week2" type="462c0819:PsiDirectoryNode" />
               <item name="Collections" type="462c0819:PsiDirectoryNode" />
               <item name="List" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="Collections" type="462c0819:PsiDirectoryNode" />
+              <item name="List" type="462c0819:PsiDirectoryNode" />
+              <item name="ArrayList" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -549,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557817902825</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="refactored the naming conventions for package Collections from 1.Collections">
+      <created>1557818697659</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1557818697659</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -563,6 +590,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2987897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -633,44 +661,10 @@
     <MESSAGE value="exceptions" />
     <MESSAGE value="handled error in code" />
     <MESSAGE value="revised project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="revised project structure" />
+    <MESSAGE value="refactored the naming conventions for package Collections from 1.Collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored the naming conventions for package Collections from 1.Collections" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week1/MemoryManagement/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#105#106#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/JdkJreJvm/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1043,6 +1037,58 @@
             <caret line="3" selection-start-line="3" selection-end-line="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/DriverProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
