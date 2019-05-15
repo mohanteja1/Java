@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,13 +19,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+            <state relative-caret-position="233">
+              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#220#228#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#461#472#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/week1/NamingConventions/README.md" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/SingletonDemo.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/Singleton.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/StaticBlock.java" />
@@ -96,6 +97,7 @@
         <option value="$PROJECT_DIR$/src/week2/Collections/List/Stack/StackBasics.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/List/Vector/VectorBasics.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java" />
       </list>
     </option>
   </component>
@@ -154,6 +156,24 @@
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="Collections" type="462c0819:PsiDirectoryNode" />
+              <item name="Queue" type="462c0819:PsiDirectoryNode" />
+              <item name="Deque" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="Collections" type="462c0819:PsiDirectoryNode" />
+              <item name="Queue" type="462c0819:PsiDirectoryNode" />
+              <item name="PriorityQueue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -195,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinkedListBasics">
+  <component name="RunManager" selected="Application.PriorityQueueBasics">
     <configuration name="ArrayListBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week2.Collections.List.ArrayList.ArrayListBasic" />
       <module name="IdeaProjects" />
@@ -235,12 +255,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FinalizeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week1.ExceptionalHandling.FinalizeExample" />
+    <configuration name="LinkedListBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.Collections.List.LinkedList.LinkedListBasics" />
       <module name="IdeaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week1.ExceptionalHandling.*" />
+          <option name="PATTERN" value="week2.Collections.List.LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -248,12 +268,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.Collections.List.LinkedList.LinkedListBasics" />
+    <configuration name="PriorityQueueBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.Collections.Queue.PriorityQueue.PriorityQueueBasics" />
       <module name="IdeaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week2.Collections.List.LinkedList.*" />
+          <option name="PATTERN" value="week2.Collections.Queue.PriorityQueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -268,11 +288,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PriorityQueueBasics" />
         <item itemvalue="Application.LinkedListBasics" />
         <item itemvalue="Application.ArrayListSerializeAndDeserialize" />
         <item itemvalue="Application.ArrayListBasic" />
         <item itemvalue="Application.Exceptions" />
-        <item itemvalue="Application.FinalizeExample" />
       </list>
     </recent_temporary>
   </component>
@@ -518,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557904056546</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Queue interface basics">
+      <created>1557906695230</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1557906695230</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -534,7 +561,7 @@
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.04709576" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.04709576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -543,7 +570,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.24086379" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.39202657" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,16 +638,10 @@
     <MESSAGE value="linkedlist completed" />
     <MESSAGE value="Stack completed" />
     <MESSAGE value="vectors completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="vectors completed" />
+    <MESSAGE value="Queue interface basics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Queue interface basics" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/AbstractUse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -746,14 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1053,11 +1066,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        <state relative-caret-position="952">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#220#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+          <folding>
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#461#472#0" expanded="true" />
           </folding>
         </state>
       </provider>
