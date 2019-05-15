@@ -1,10 +1,9 @@
 package week2.Collections.List.ArrayList;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.io.Serializable;
+import java.util.*;
 
-class Coordiantes implements Comparable<Coordiantes>{
+class Coordiantes implements Comparable<Coordiantes> , Serializable {
     private int xCoordinate;
     private int yCoordinate;
 
@@ -197,7 +196,34 @@ public class ArrayListBasic {
         //void trimToSize() :It is used to trim the capacity of this ArrayList instance to be the list's current size.
 
 
-//-------------------------------------------
+//----------------------listiterator---------------------
+
+
+        ListIterator<Coordiantes> pointIterator = arrayList.listIterator(arrayList.size());
+
+        while(pointIterator.hasPrevious()){
+
+            Coordiantes obj = pointIterator.previous();
+            Coordiantes.printCmd(obj);
+        }
+
+
+//----------------------------iterator
+
+        Iterator<Coordiantes> iterator = arrayList.iterator();
+
+        while(iterator.hasNext()){
+
+            Coordiantes obj = iterator.next();
+
+            Coordiantes.printCmd(obj);
+
+
+        }
+
+
+        //--------------------------------------
+
 
 
 
