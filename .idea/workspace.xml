@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Map/HashMap/HashMapBasics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Map/HashMap/SynchronizingHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/LinkedHashMapBasics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Map/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,28 +22,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/HashMap/SynchronizingHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+            <state relative-caret-position="293">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
-                <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#461#472#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#352#368#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/LinkedHashMapBasics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#225#233#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/HashMap/HashMapBasics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -58,10 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/Singleton.java" />
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/StaticBlock.java" />
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/objectsandclasses/Cartoon.java" />
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/objectsandclasses/A.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/objectsandclasses/WaysToCreateObject.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/Circle.java" />
         <option value="$PROJECT_DIR$/src/week1/MemoryManagement/README.md" />
@@ -109,13 +114,18 @@
         <option value="$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/LinkedHashMapBasics.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/Map/HashMap/HashMapBasics.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/Map/HashMap/SynchronizingHashMap.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="height" value="787" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -154,7 +164,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="week2" type="462c0819:PsiDirectoryNode" />
               <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Queue" type="462c0819:PsiDirectoryNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -162,8 +172,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="week2" type="462c0819:PsiDirectoryNode" />
               <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Queue" type="462c0819:PsiDirectoryNode" />
-              <item name="ArrayDeque" type="462c0819:PsiDirectoryNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkedHashMap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -171,17 +181,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="week2" type="462c0819:PsiDirectoryNode" />
               <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Queue" type="462c0819:PsiDirectoryNode" />
-              <item name="Deque" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Queue" type="462c0819:PsiDirectoryNode" />
-              <item name="PriorityQueue" type="462c0819:PsiDirectoryNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
+              <item name="TreeMap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -205,7 +206,7 @@
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/week2/1.Collections/Set/TreeSet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/week2/Collections/Map" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -215,11 +216,11 @@
       <recent name="C:\Users\User.FULL272-WIN.000\IdeaProjects\Java\src\week1\2.MemoryManagement" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User.FULL272-WIN.000\IdeaProjects\Java\src\week2\Collections\Map" />
       <recent name="C:\Users\User.FULL272-WIN.000\IdeaProjects\Java\src\week2\1.Collections\Set\TreeSet" />
       <recent name="C:\Users\User.FULL272-WIN.000\IdeaProjects\Java\src\week2\1.Collections\Set\SortedSet" />
       <recent name="C:\Users\User.FULL272-WIN.000\IdeaProjects\Java\src\week2\1.Collections\Set\LinkedHashSet" />
       <recent name="C:\Users\User.FULL272-WIN.000\IdeaProjects\Java\src\week2\1.Collections\Set\HashSet" />
-      <recent name="C:\Users\User.FULL272-WIN.000\IdeaProjects\Java\src\week2\1.Collections\Queue\PriorityQueue" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -234,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PriorityQueueBasics">
+  <component name="RunManager" selected="Application.HashMapBasics">
     <configuration name="ArrayListBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week2.Collections.List.ArrayList.ArrayListBasic" />
       <module name="IdeaProjects" />
@@ -261,12 +262,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exceptions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week1.ExceptionalHandling.Exceptions" />
+    <configuration name="HashMapBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.Collections.Map.HashMap.HashMapBasics" />
       <module name="IdeaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week1.ExceptionalHandling.*" />
+          <option name="PATTERN" value="week2.Collections.Map.HashMap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -307,11 +308,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashMapBasics" />
         <item itemvalue="Application.PriorityQueueBasics" />
         <item itemvalue="Application.LinkedListBasics" />
         <item itemvalue="Application.ArrayListSerializeAndDeserialize" />
         <item itemvalue="Application.ArrayListBasic" />
-        <item itemvalue="Application.Exceptions" />
       </list>
     </recent_temporary>
   </component>
@@ -571,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557909040167</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Queues completed">
+      <created>1557909795499</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1557909795499</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -584,10 +592,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.04709576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -596,8 +604,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.39202657" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2749591" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
@@ -666,48 +674,10 @@
     <MESSAGE value="vectors completed" />
     <MESSAGE value="Queue interface basics" />
     <MESSAGE value="priority queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="priority queue" />
+    <MESSAGE value="Queues completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Queues completed" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/CovariantReturnType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/InstanceOf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/MethodOverloading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/Multilevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-790">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/RuntimePolymorphismOrDynamicDispatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-382">
@@ -1094,6 +1064,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#225#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -1106,14 +1087,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java">
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/HashMap/HashMapBasics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/HashMap/SynchronizingHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#225#233#0" expanded="true" />
+            <element signature="e#352#368#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/LinkedHashMapBasics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="11" />
         </state>
       </provider>
     </entry>
