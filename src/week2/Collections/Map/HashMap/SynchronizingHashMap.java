@@ -1,5 +1,6 @@
 package week2.Collections.Map.HashMap;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
@@ -15,14 +16,20 @@ public class SynchronizingHashMap {
 
     static void increaseScore(int increament,Map<String,Integer> Scores,String university){
 
-        int score = Scores.get(university);
-        Scores.put(university,score+increament);
+        synchronized (Scores){
+            int score = Scores.get(university);
+            Scores.put(university,score+increament);
+        }
+
 
     }
 
 
     public static void main(String args[]){
-        Map<String,Integer> adaptiveUscores = new HashMap<String,Integer>();
+
+
+
+        Map<String,Integer> adaptiveUscores = Collections.synchronizedMap(new HashMap<String,Integer>());
 
         // take for example AdaptiveU of Full user visits universities and scores in the university depends on the videos watched
 
@@ -47,6 +54,7 @@ public class SynchronizingHashMap {
 
         executorService.shutdown();
 
+
         try {
             executorService.awaitTermination(60, TimeUnit.SECONDS);
         }
@@ -55,7 +63,7 @@ public class SynchronizingHashMap {
         }
 
 
-
+        System.out.println(adaptiveUscores);
 
 
 
