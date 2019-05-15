@@ -1,6 +1,7 @@
 package week2.Collections.List.LinkedList;
 
 import java.io.Serializable;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 class Human implements Comparable<Human> , Serializable {
@@ -76,7 +77,44 @@ public class LinkedListBasics {
 
         humans.addFirst(new Human("man",33,"indian"));
 
-        
+        System.out.println("beforeSort" + humans);
+
+        humans.sort(Human::compareTo);
+
+        System.out.println("afterSort" + humans);
+
+      //iterators
+        Iterator<Human> iterator = humans.descendingIterator();
+
+        while(iterator.hasNext()){
+
+            System.out.println(iterator.next().toString());
+        }
+
+
+        System.out.println(humans.get(3).toString());
+        System.out.println(humans.getFirst().toString());
+        System.out.println(humans.getLast().toString());
+
+       System.out.println(humans.contains(humans1.getLast()));
+
+       humans.retainAll(humans1);
+
+       System.out.println("after retianing all" + humans);
+
+       // iteratoring
+
+        humans.forEach(human -> {
+            System.out.println(human.toString());
+        });
+
+         
+
+
+
+       humans.clear();
+       humans1.clear();
+
 
 
 
