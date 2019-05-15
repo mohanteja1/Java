@@ -12,6 +12,8 @@ public class StackBasics {
 
         Stack<Integer> integersStack = new Stack<Integer>();
 
+        //important methods:
+        //Object push(Object element)
         integersStack.push(new Integer(23));
         integersStack.push(new Integer(33));
         integersStack.push(new Integer(13));
@@ -25,6 +27,7 @@ public class StackBasics {
             System.out.println(integer.toString());
 
         });
+        //Object pop( )
 
         integersStack.pop();
 
@@ -35,8 +38,8 @@ public class StackBasics {
 
 
 
-        //important methods:
-        // boolean empty()
+
+
 
 
 
@@ -47,17 +50,23 @@ public class StackBasics {
 
 
 
-        //Object pop( )
 
 
 
 
-        //Object push(Object element)
+
 
         //int search(Object element)
+        // Searches for element in the stack. If found, its offset from
+        // the top of the stack is returned. Otherwise, -1 is returned.
 
 
         System.out.println(integersStack.search(new Integer(22)));
+
+        // boolean empty()
+        integersStack.clear();
+
+        System.out.println(integersStack.isEmpty()+""+integersStack.empty());
 
 
 
