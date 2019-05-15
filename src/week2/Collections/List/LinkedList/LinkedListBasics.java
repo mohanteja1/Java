@@ -108,7 +108,7 @@ public class LinkedListBasics {
             System.out.println(human.toString());
         });
 
-         
+
 
 
 

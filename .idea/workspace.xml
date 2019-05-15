@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/List/LinkedList/LinkedListBasics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/List/Stack/StackBasics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/Collections/List/LinkedList/LinkedListBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/List/LinkedList/LinkedListBasics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,15 +18,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/LinkedList/LinkedListBasics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+            <state relative-caret-position="282">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#958#965#0" expanded="true" />
                 <element signature="e#1688#1695#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/Stack/StackBasics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="59" column="66" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#293#302#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,7 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/Square.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/Shape.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/Driver.java" />
         <option value="$PROJECT_DIR$/src/week1/NamingConventions/README.md" />
@@ -97,6 +110,7 @@
         <option value="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/ArrayListSerializeAndDeserialize.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/List/ArrayList/ArrayListBasic.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/List/LinkedList/LinkedListBasics.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/List/Stack/StackBasics.java" />
       </list>
     </option>
   </component>
@@ -151,7 +165,7 @@
               <item name="week2" type="462c0819:PsiDirectoryNode" />
               <item name="Collections" type="462c0819:PsiDirectoryNode" />
               <item name="List" type="462c0819:PsiDirectoryNode" />
-              <item name="LinkedList" type="462c0819:PsiDirectoryNode" />
+              <item name="Stack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -212,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ArrayListSerializeAndDeserialize">
+  <component name="RunManager" selected="Application.LinkedListBasics">
     <configuration name="ArrayListBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week2.Collections.List.ArrayList.ArrayListBasic" />
       <module name="IdeaProjects" />
@@ -265,12 +279,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegularExpressions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week1.StringsStringBuffersStringBuilders.RegularExpressions" />
+    <configuration name="LinkedListBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.Collections.List.LinkedList.LinkedListBasics" />
       <module name="IdeaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week1.StringsStringBuffersStringBuilders.*" />
+          <option name="PATTERN" value="week2.Collections.List.LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -285,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedListBasics" />
         <item itemvalue="Application.ArrayListSerializeAndDeserialize" />
         <item itemvalue="Application.ArrayListBasic" />
         <item itemvalue="Application.Exceptions" />
         <item itemvalue="Application.FinalizeExample" />
-        <item itemvalue="Application.RegularExpressions" />
       </list>
     </recent_temporary>
   </component>
@@ -500,7 +514,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557899077812</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="linkedlist">
+      <created>1557900633747</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1557900633747</updated>
+    </task>
+    <task id="LOCAL-00030" summary="linkedlist completed">
+      <created>1557901721947</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1557901721947</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -516,7 +544,7 @@
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08006279" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35949764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -589,19 +617,11 @@
     <MESSAGE value="lists" />
     <MESSAGE value="Arraylists" />
     <MESSAGE value="Arraylists completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arraylists completed" />
+    <MESSAGE value="linkedlist" />
+    <MESSAGE value="linkedlist completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="linkedlist completed" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" selection-start-line="12" selection-end-line="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/abstraction/Abstract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -1028,12 +1048,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/LinkedList/LinkedListBasics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+        <state relative-caret-position="282">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#958#965#0" expanded="true" />
             <element signature="e#1688#1695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/Stack/StackBasics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="66" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#293#302#0" expanded="true" />
           </folding>
         </state>
       </provider>
