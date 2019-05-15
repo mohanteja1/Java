@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
@@ -27,6 +25,19 @@
                 <element signature="e#239#240#0" expanded="true" />
                 <element signature="e#301#302#0" expanded="true" />
                 <element signature="e#461#472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#225#233#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,7 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/SingletonDemo.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/Singleton.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/StaticBlock.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/objectsandclasses/Cartoon.java" />
@@ -98,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/week2/Collections/List/Vector/VectorBasics.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Queue/QueueInterfaceBasics.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/PriorityQueueBasics.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java" />
       </list>
     </option>
   </component>
@@ -171,6 +182,14 @@
               <item name="Collections" type="462c0819:PsiDirectoryNode" />
               <item name="Queue" type="462c0819:PsiDirectoryNode" />
               <item name="PriorityQueue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="Collections" type="462c0819:PsiDirectoryNode" />
+              <item name="Set" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -545,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557906695230</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="priority queue">
+      <created>1557909040167</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1557909040167</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -561,7 +587,7 @@
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.04709576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.04709576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -570,7 +596,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.39202657" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.39202657" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -639,24 +665,10 @@
     <MESSAGE value="Stack completed" />
     <MESSAGE value="vectors completed" />
     <MESSAGE value="Queue interface basics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Queue interface basics" />
+    <MESSAGE value="priority queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="priority queue" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/AbstractUse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/OOPsFundamentals/singletonexample/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1090,6 +1102,17 @@
             <element signature="e#239#240#0" expanded="true" />
             <element signature="e#301#302#0" expanded="true" />
             <element signature="e#461#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/ArrayDeque/ArrayDequeBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#225#233#0" expanded="true" />
           </folding>
         </state>
       </provider>
