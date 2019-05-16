@@ -10,6 +10,8 @@ public class Contact implements Cloneable,Comparable<Contact>, Serializable {
     private String workEmail;
     private String address;
 
+    public Contact() {
+    }
 
     public Contact(String name) {
         this.name = name;
@@ -76,6 +78,7 @@ public class Contact implements Cloneable,Comparable<Contact>, Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
+
 
     //comparisionFunction
 

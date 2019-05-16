@@ -6,15 +6,53 @@ import java.util.Scanner;
 
 public class ContactsApplication {
 
+    private List<Contact> contacts;
 
-    private boolean addContact(Contact contact){
+    private Contact getInputDetails(Contact oldContact,Integer[] optionArray){
+
+        //get the details for new contact
+
+        //Ask for details
+        Scanner scanner = new Scanner(System.in);
+        Contact contact = new Contact();
+        //name :
+        System.out.println("Enter the details: ");
+        System.out.println("name:");
+        contact.setName(scanner.nextLine());
+        System.out.println("phone");
+        contact.setPhoneNumber(scanner.nextLine());
+        System.out.println("personal email");
+        contact.setPersonalEmail(scanner.nextLine());
+        System.out.println("address");
+        contact.setAddress(scanner.nextLine());
+        System.out.println("workEmail");
+        contact.setWorkEmail(scanner.nextLine());
+
+        return contact;
+
+    }
 
 
+    private boolean addContact(){
+
+        //1. getdetails
+        // 2. create a new contact
+        Contact contact = getInputDetails(null,null);
+        //3. add it to the list
+        contacts.add(contact);
 
         return true;
     }
 
-    private void updateContact( ){
+    private void updateContact(Contact contact ){
+
+        //1. recieve old contact
+
+        //2. getDetails
+
+        //3. update the contact
+
+        //3. show that particular contact
 
 
         return ;
@@ -22,15 +60,50 @@ public class ContactsApplication {
 
     private void removeContact(){
 
+        //1. getContactId
+
+        //2. search contact
+
+        //3. show contact
+
+        //4 ask for confirmation
+
+        //5. delete
+
+
+
+
     }
 
-    private void searchContact(){
+    private void searchContact(String identifier,int identifierType){
+
+        contacts.
+
+
+
 
     }
-    private void showContacts(){
+
+    private void showSingleContact(Contact contact){
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("|" + contact.getName() + "|"+contact.getPhoneNumber()+"|"+contact.getPersonalEmail()+"|"+contact.getWorkEmail()+"|"+contact.getAddress());
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+
 
     }
+
+    private void showAllContacts(List<Contact> contacts){
+          // print all contacts
+
+        contacts.forEach(contact -> {showSingleContact(contact);});
+
+    }
+
     private void exit(){
+
+        //check for closing files and stream readers and writers if any
+        // and close
+
 
     }
 
@@ -54,12 +127,13 @@ public class ContactsApplication {
 
     }
 
-    private void deserializePreviousData( String fileName){
+    private void deserializePreviousData(String fileName){
 
         try{
             FileInputStream fileInputStream = new FileInputStream(fileName);
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-            List<Contact> contacts = (List<Contact>) objectInputStream.readObject();
+            this.contacts = (List<Contact>) objectInputStream.readObject();
+
 
         }
         catch (FileNotFoundException e)
@@ -89,9 +163,10 @@ public class ContactsApplication {
 
 
 
+
         //create object list from file using thread
         Thread thread = new Thread(()->{
-           this.deserializePreviousData("contacts.txt");
+           deserializePreviousData("contacts.txt");
         });
         thread.start();
 
@@ -108,7 +183,7 @@ public class ContactsApplication {
             System.out.println("\t 5.Show all existing contacts");
             System.out.println("\t 6.Exit");
             System.out.println("please enter your choice :");
-            optionInput=scanner.nextInt();
+            optionInput = scanner.nextInt();
 
 
             //wait till deserialize completes
@@ -133,7 +208,7 @@ public class ContactsApplication {
                 break;
                 case 4: this.searchContact();
                 break;
-                case 5: this.showContacts();
+                case 5: this.showAllContacts();
                 break;
                 case 6: this.exit();
                 break;
