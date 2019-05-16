@@ -9,6 +9,10 @@ class ThreadCreationUsingRunnable implements Runnable{
     }
 
 
+
+
+
+
 }
 
 class ThreadCreationUsingThreadExtension extends Thread{
@@ -35,6 +39,27 @@ public class ThreadMethods {
 
         ThreadCreationUsingThreadExtension threadCreationUsingThreadExtension = new ThreadCreationUsingThreadExtension();
         threadCreationUsingThreadExtension.start();
+
+
+        //thread creation using Anonymous class
+        System.out.println("Creating Runnable...");
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Inside : " + Thread.currentThread().getName());
+            }
+        };
+
+        System.out.println("Creating Thread...");
+        Thread thread = new Thread(runnable);
+
+
+
+
+
+
+
+
 
 
 
