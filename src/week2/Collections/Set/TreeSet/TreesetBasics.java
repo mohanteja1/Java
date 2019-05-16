@@ -21,6 +21,7 @@ public class TreesetBasics {
         Brands.add("Alibaba");
         Brands.add("Amazon");
         Brands.add("Facebook");
+        Brands.add("Facebook");
 
 
         Brands.forEach(System.out::println);

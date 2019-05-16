@@ -28,8 +28,29 @@
    Time sclicing : predefined time for each process
                    and reenters pool of ready threads
                    
+   Runnable Vs Thread:
+      : no multiple inheritance so Runnable is better
+      
+   Executors framework:
    
-    
+      1. easy to create more no of threads with single initialization
+      1. multi threaded applications will have 1000 or more threads its 
+         make sense to separate thread creation and management from 
+         rest of application
+      
+   framework:
+     helps u with:
+        
+        1. thread creation
+        2. Thread Management
+        3. Task submission and execution
+     
+   interfaces in the Java concurrency API    
+       Executor 
+       ExecutorService
+       ScheduledExecutoService
+       
+       Executors class
     
     
     

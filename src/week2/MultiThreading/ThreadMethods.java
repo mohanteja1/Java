@@ -8,11 +8,6 @@ class ThreadCreationUsingRunnable implements Runnable{
         System.out.println("created thread ");
     }
 
-
-
-
-
-
 }
 
 class ThreadCreationUsingThreadExtension extends Thread{
@@ -20,6 +15,9 @@ class ThreadCreationUsingThreadExtension extends Thread{
     public void someFunction(){
         System.out.println("crated thread");
     }
+
+
+
 }
 
 
@@ -27,6 +25,11 @@ class ThreadCreationUsingThreadExtension extends Thread{
 
 public class ThreadMethods {
     public static void main(){
+
+        //get curent thread name
+        System.out.println(Thread.currentThread().getName());
+
+
 
         // thread creation using Runnable interface
 
@@ -50,12 +53,35 @@ public class ThreadMethods {
             }
         };
 
+
         System.out.println("Creating Thread...");
         Thread thread = new Thread(runnable);
 
 
+        //thread creation using lambda expression
+
+        Runnable runnable2 = () -> {
+            System.out.println("Inside : " + Thread.currentThread().getName());
+
+        };
 
 
+        //Thread anonymous creation
+
+        // Create Thread 1
+        Thread thread2 = new Thread(() -> {
+            System.out.println("Entered Thread 2");
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new IllegalStateException(e);
+            }
+            System.out.println("Exiting Thread 2");
+        });
+
+        thread2.start();
+
+   // thread 2
 
 
 
@@ -112,6 +138,7 @@ public class ThreadMethods {
         //public boolean isInterrupted(): tests if the thread has been interrupted.
 
         //public static boolean interrupted(): tests if the current thread has been interrupted.
+
 
 
 

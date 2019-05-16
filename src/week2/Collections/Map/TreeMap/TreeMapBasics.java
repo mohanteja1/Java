@@ -36,7 +36,7 @@ public class TreeMapBasics {
         }
         System.out.println("printing first entry and last entry");
 
-         System.out.println(ipindexing.firstEntry().toString());
+        System.out.println(ipindexing.firstEntry().toString());
         System.out.println(ipindexing.lastEntry().toString());
 
 
