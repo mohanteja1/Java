@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/WebSites.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/Collections/Set/TreeSet/TreesetBasics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/LinkedHashMapBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/LinkedHashMapBasics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="136">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#312#331#0" expanded="true" />
@@ -39,6 +37,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/week2/Collections/Set/TreeSet/TreesetBasics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -75,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/week1/MemoryManagement/README.md" />
         <option value="$PROJECT_DIR$/src/week1/JdkJreJvm/Program1.java" />
         <option value="$PROJECT_DIR$/src/week1/JdkJreJvm/Driver.java" />
         <option value="$PROJECT_DIR$/src/week1/JdkJreJvm/SqureValue.java" />
@@ -126,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/LinkedHashMapBasics.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/WebSites.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java" />
+        <option value="$PROJECT_DIR$/src/week2/Collections/Set/TreeSet/TreesetBasics.java" />
       </list>
     </option>
   </component>
@@ -135,7 +142,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -177,33 +184,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="week2" type="462c0819:PsiDirectoryNode" />
               <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="List" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-              <item name="LinkedHashMap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-              <item name="TreeMap" type="462c0819:PsiDirectoryNode" />
+              <item name="Set" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -212,6 +193,7 @@
               <item name="week2" type="462c0819:PsiDirectoryNode" />
               <item name="Collections" type="462c0819:PsiDirectoryNode" />
               <item name="Set" type="462c0819:PsiDirectoryNode" />
+              <item name="TreeSet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -257,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TreeMapBasics">
+  <component name="RunManager" selected="Application.TreesetBasics">
     <configuration name="HashMapBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week2.Collections.Map.HashMap.HashMapBasics" />
       <module name="IdeaProjects" />
@@ -277,19 +259,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="week2.Collections.Map.LinkedHashMap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PriorityQueueBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.Collections.Queue.PriorityQueue.PriorityQueueBasics" />
-      <module name="IdeaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.Collections.Queue.PriorityQueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,6 +292,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TreesetBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.Collections.Set.TreeSet.TreesetBasics" />
+      <module name="IdeaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.Collections.Set.TreeSet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Java Scratch" singleton="false">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -330,11 +312,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreesetBasics" />
         <item itemvalue="Application.TreeMapBasics" />
         <item itemvalue="Application.LinkedHashMapBasics" />
         <item itemvalue="Application.SynchronizingHashMap" />
         <item itemvalue="Application.HashMapBasics" />
-        <item itemvalue="Application.PriorityQueueBasics" />
       </list>
     </recent_temporary>
   </component>
@@ -622,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557985612381</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="treeMap">
+      <created>1557988691148</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1557988691149</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
@@ -635,10 +624,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.022692889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.04709576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -647,7 +636,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.30932897" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.10963455" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -695,7 +684,6 @@
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="jvm,jre,jdk completed" />
     <MESSAGE value="java memory management completed and documented" />
     <MESSAGE value="fixed package naming issues" />
     <MESSAGE value="interfaces - example" />
@@ -720,12 +708,10 @@
     <MESSAGE value="hashmap" />
     <MESSAGE value="Syncronized hashmap" />
     <MESSAGE value="Map sorting based upon CustomeObject value" />
-    <option name="LAST_COMMIT_MESSAGE" value="Map sorting based upon CustomeObject value" />
+    <MESSAGE value="treeMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="treeMap" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Collections.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/StringsStringBuffersStringBuilders/StringMethods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
@@ -1124,13 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/WebSites.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/LinkedHashMapBasics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1143,14 +1122,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="136">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#312#331#0" expanded="true" />
             <element signature="e#439#440#0" expanded="true" />
             <element signature="e#479#480#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/WebSites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Set/TreeSet/TreesetBasics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
         </state>
       </provider>
     </entry>
