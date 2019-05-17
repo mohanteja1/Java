@@ -15,6 +15,7 @@ public class ContactsApplication {
 
     private Contact selectContact() {
         int optionOfSelectCOntact;
+        String identifier;
         System.out.println("Please choose the contact from following option: \n\t 1. search contact \n\t 2.select from table \n\t press any other key to return to main menu");
         Scanner scanner = new Scanner(System.in);
         optionOfSelectCOntact = scanner.nextInt();
@@ -22,20 +23,23 @@ public class ContactsApplication {
         switch (optionOfSelectCOntact) {
             case 1:
                 //return contact through Search function
-                System.out.println("select the variable you want to search for the contact\n\t 1. name \n\t 2. phone number \n\t 3. personal Email \n\t 4.work email \n\t 4. address");
+                System.out.println("select the variable you want to search for the contact\n\t 1. name \n\t 2. phone number \n\t 3. personal Email \n\t 4. work email \n\t 5. address");
                 int identifierType = scanner.nextInt();
-                while (identifierType < 1 || identifierType > 6) {
-                    System.out.println("invalid input , please select between [1-6] ");
+                while (identifierType < 1 || identifierType > 5) {
+                    System.out.println("invalid input , please select between [1-5] ");
                     identifierType = scanner.nextInt();
                 }
                 System.out.println("please enter a key word for the choosen type");
-                String identifier = scanner.nextLine();
-                return contacts.get(searchContact(identifier, identifierType));
+                identifier=scanner.next();
+                int index =searchContact(identifier,identifierType);
+                if(debugVariable)System.out.println("index :" + index);
+                return contacts.get(index);
             case 2:
                 // return contact from table index
                 showAllContacts();
                 System.out.println("please select the index of the required contact from above table");
-                return contacts.get(scanner.nextInt() - 1);
+                int tableIndex= Integer.parseInt(scanner.next());
+                return contacts.get(tableIndex - 1);
             default:
                 System.out.println("returning to main menu");
                 return null;
@@ -136,18 +140,31 @@ public class ContactsApplication {
 
     private boolean removeContact(Contact contact) {
 
-        //1. getContactId
+        //1. get Contact
 
-        //2. search contact
+        //2. show contact
 
-        //3. show contact
+        System.out.println("the contact you selected :");
+        showSingleContact(contact);
 
         //4 ask for confirmation
 
+        System.out.println("sure you want to remove this contact press Y to confirm or N to abort");
+        Scanner scanner = new Scanner(System.in);
+        String confirmation = scanner.nextLine();
+
         //5. delete
+        if(confirmation.equalsIgnoreCase("y")) {
+            contacts.remove(contact);
+            System.out.println("contact removed");
+            return true;
 
+        }
+        else{
+            System.out.println("Remove operation aborted");
+            return false;
+        }
 
-        return true;
     }
 
     private int searchContact(String identifier, int identifierType) {
@@ -189,8 +206,7 @@ public class ContactsApplication {
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
-
-
+        
         //actual search
 
 
@@ -314,20 +330,20 @@ public class ContactsApplication {
     public void runApplication() {
 
         // variables
-        boolean donotExitVariable = true;
+        boolean doNotExitVariable = true;
         int optionInput = 0;
 
 
-        //create object list from file using thread----------------------------------------
+        //create object list from file using thread
         Thread thread = new Thread(() -> {
             deserializePreviousData("contacts.txt");
         });
         thread.start();
 
 
-        //run loop------------------------------------------------------------------------------------------
+        //run loop
 
-        while (donotExitVariable) {
+        while (doNotExitVariable) {
             Scanner scanner = new Scanner(System.in);
             menuDisplay();
             optionInput = scanner.nextInt();
@@ -346,23 +362,25 @@ public class ContactsApplication {
 
             switch (optionInput) {
                 case 1:
-                    this.addContact(getInputDetails(null, null), -1);
+                    addContact(getInputDetails(null, null), -1);
                     break;
                 case 2:
                     System.out.println("update contact");
-                    this.updateContact(selectContact());
+                    updateContact(selectContact());
                     break;
                 case 3:
-                    this.removeContact(selectContact());
+                    removeContact(selectContact());
                     break;
                 case 4:
-                    this.searchContact(null, 0);
+                    Contact contact=selectContact();
+                    System.out.println("Results of your search :");
+                    showSingleContact(contact);
                     break;
                 case 5:
-                    this.showAllContacts();
+                    showAllContacts();
                     break;
                 case 6:
-                    this.exit();
+                    exit();
                     break;
                 default:
                     System.out.println("please enter valid input [1-6]");
