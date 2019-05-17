@@ -79,11 +79,27 @@ public class Contact implements Cloneable,Comparable<Contact>, Serializable {
         this.address = address;
     }
 
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", personalEmail='" + personalEmail + '\'' +
+                ", workEmail='" + workEmail + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 
-    //comparisionFunction
+//comparisionFunction
 
     @Override
     public int compareTo(Contact o) {
         return this.name.compareTo(o.name);
     }
+
+
+
+
+
+
 }
