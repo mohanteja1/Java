@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contactsApplication/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactsApplication/Contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="170">
+              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -619,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558012132179</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="contactApplication structure reorganised">
+      <created>1558016108831</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1558016108831</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView">
@@ -664,7 +670,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="polymorphism" />
     <MESSAGE value="Abstraction" />
     <MESSAGE value="Strings ,StringBuilders ,StringBuffers" />
     <MESSAGE value="exceptions" />
@@ -689,7 +694,8 @@
     <MESSAGE value="Multithreading" />
     <MESSAGE value="anonymousClass threading" />
     <MESSAGE value="contactApplication" />
-    <option name="LAST_COMMIT_MESSAGE" value="contactApplication" />
+    <MESSAGE value="contactApplication structure reorganised" />
+    <option name="LAST_COMMIT_MESSAGE" value="contactApplication structure reorganised" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/week1/StringsStringBuffersStringBuilders/RegularExpressions.java">
@@ -1140,8 +1146,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="170">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

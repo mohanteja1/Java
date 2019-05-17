@@ -44,13 +44,18 @@ public class ContactsApplication {
         return true;
     }
 
-    private void updateContact(Contact contact ){
+    private void updateContact(Contact oldContact ){
 
         //1. recieve old contact
+            //show details of old contact
+        System.out.println("current contact details :");
+        showSingleContact(oldContact);
 
         //2. getDetails
 
+        
         //3. update the contact
+
 
         //3. show that particular contact
 
@@ -77,7 +82,6 @@ public class ContactsApplication {
 
     private void searchContact(String identifier,int identifierType){
 
-        contacts.
 
 
 
@@ -130,7 +134,14 @@ public class ContactsApplication {
     private void deserializePreviousData(String fileName){
 
         try{
-            FileInputStream fileInputStream = new FileInputStream(fileName);
+
+            //check if file exists else return;
+            File file = new File(fileName);
+
+            file.createNewFile();
+
+
+            FileInputStream fileInputStream = new FileInputStream(file);
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             this.contacts = (List<Contact>) objectInputStream.readObject();
 
@@ -155,6 +166,21 @@ public class ContactsApplication {
 
     }
 
+    private void menuDisplay(){
+
+        System.out.println("Hello user Welcome to the Contacts Application");
+        System.out.println("----------------------Options-------------------------");
+        System.out.println("\t 1.Add Contact");
+        System.out.println("\t 2.Update a Contact");
+        System.out.println("\t 3.Remove an existing Contact");
+        System.out.println("\t 4.Search Contacts");
+        System.out.println("\t 5.Show all existing contacts");
+        System.out.println("\t 6.Exit");
+        System.out.println("please enter your choice :");
+    }
+
+
+
     public void runApplication(){
 
         // variables
@@ -174,21 +200,13 @@ public class ContactsApplication {
 
         while(donotExitVariable){
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Hello user Welcome to the Contacts Application");
-            System.out.println("----------------------Options-------------------------");
-            System.out.println("\t 1.Add Contact");
-            System.out.println("\t 2.Update a Contact");
-            System.out.println("\t 3.Remove an existing Contact");
-            System.out.println("\t 4.Search Contacts");
-            System.out.println("\t 5.Show all existing contacts");
-            System.out.println("\t 6.Exit");
-            System.out.println("please enter your choice :");
+            menuDisplay();
             optionInput = scanner.nextInt();
-
-
             //wait till deserialize completes
             try {
-                thread.join(1000);
+                if(thread.isAlive()) {
+                    thread.join(1000);
+                }
             }
             catch (InterruptedException e)
             {
