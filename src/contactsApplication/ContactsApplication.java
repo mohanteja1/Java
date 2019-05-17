@@ -1,50 +1,46 @@
 package contactsApplication;
 
 import java.io.*;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
 public class ContactsApplication {
 
-    private List<Contact> contacts=null;
-    private boolean debugVariable=true;
-    private String filename="contacts.txt" ;
+    private List<Contact> contacts = null;
+    private boolean debugVariable = true;
+    private String filename = "contacts.txt";
 
-    private Contact selectContact(){
+    private Contact selectContact() {
         int optionOfSelectCOntact;
         System.out.println("Please choose the contact from following option: \n\t 1. search contact \n\t 2.select from table \n\t press any other key to return to main menu");
         Scanner scanner = new Scanner(System.in);
-        optionOfSelectCOntact=scanner.nextInt();
+        optionOfSelectCOntact = scanner.nextInt();
 
-        switch (optionOfSelectCOntact){
+        switch (optionOfSelectCOntact) {
             case 1:
                 //return contact through Search function
                 System.out.println("select the variable you want to search for the contact\n\t 1. name \n\t 2. phone number \n\t 3. personal Email \n\t 4.work email \n\t 4. address");
                 int identifierType = scanner.nextInt();
-                while(identifierType<1 || identifierType>6)
-                {
+                while (identifierType < 1 || identifierType > 6) {
                     System.out.println("invalid input , please select between [1-6] ");
-                    identifierType= scanner.nextInt();
+                    identifierType = scanner.nextInt();
                 }
                 System.out.println("please enter a key word for the choosen type");
-                String identifier =scanner.nextLine();
-                return contacts.get(searchContact(identifier,identifierType));
+                String identifier = scanner.nextLine();
+                return contacts.get(searchContact(identifier, identifierType));
             case 2:
                 // return contact from table index
                 showAllContacts();
                 System.out.println("please select the index of the required contact from above table");
-                return contacts.get(scanner.nextInt()-1);
+                return contacts.get(scanner.nextInt() - 1);
             default:
                 System.out.println("returning to main menu");
                 return null;
         }
     }
-
-
-
-
-
 
 
     private Contact getInputDetails(Contact oldContact, Integer[] optionArray) {
@@ -65,22 +61,22 @@ public class ContactsApplication {
         contact.setAddress(scanner.nextLine());
         System.out.println("workEmail");
         contact.setWorkEmail(scanner.nextLine());
-         if(debugVariable)
-             System.out.println("current contact : " + contact.toString());
+        if (debugVariable)
+            System.out.println("current contact : " + contact.toString());
 
-         return contact;
+        return contact;
 
     }
 
 
-    private boolean addContact(Contact contact,int index) {
+    private boolean addContact(Contact contact, int index) {
 
         //get new contact and index where it should add
         //check for empty array
         // check for negative index
         // add contact
         try {
-            if (contacts==null) {
+            if (contacts == null) {
                 contacts = new ArrayList<Contact>();
             }
         } catch (NullPointerException e) {
@@ -88,18 +84,25 @@ public class ContactsApplication {
             e.printStackTrace();
         }
 
-        if(index==-1){
-            index =contacts.size();
+        if (index == -1) {
+            index = contacts.size();
         }
 
-        contacts.add(index,contact);
+        contacts.add(index, contact);
 
-        if(debugVariable)System.out.println("added contact :" + contacts);
+        //sort the list according to the name
+        contacts.sort(new Comparator<Contact>() {
+            @Override
+            public int compare(Contact o1, Contact o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });
+
+        if (debugVariable) System.out.println("added contact :" + contacts);
+
 
         return true;
     }
-
-
 
 
     private void updateContact(Contact oldContact) {
@@ -110,8 +113,6 @@ public class ContactsApplication {
         showSingleContact(oldContact);
 
         //2. getDetails
-
-
 
 
         //3. update the contact
@@ -140,20 +141,46 @@ public class ContactsApplication {
 
     private int searchContact(String identifier, int identifierType) {
         //failure cases
-        if(contacts==null){
+        if (contacts == null) {
             return -1;
         }
-        if(contacts.size()==0){
+        if (contacts.size() == 0) {
             return -1;
         }
-        if(identifier == null || identifierType == -1){
+        if (identifier == null || identifierType == -1) {
             return -1;
         }
+
+        String methodName;
+        if (identifierType == 1) methodName = "getName";
+        else if (identifierType == 2) methodName = "getPhoneNumber";
+        else if (identifierType == 3) methodName = "getPersonalEmail";
+        else if (identifierType == 4) methodName = "getWorkEmail";
+        else if (identifierType == 5) methodName = "getAddress";
+        else methodName = "";
+        try {
+            Method method = contacts.get(0).getClass().getMethod(methodName);
+
+            int i = 0;
+
+            for (Contact contact : contacts) {
+                try {
+                    if (method.invoke(contact).toString().contains(identifier)) {
+                        return i;
+                    }
+
+                    i++;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+
 
         //actual search
-
-
-
 
 
         return -1;
@@ -161,7 +188,7 @@ public class ContactsApplication {
 
     private boolean showSingleContact(Contact contact) {
 
-        if(contact ==null){
+        if (contact == null) {
             System.out.println("no details to show ,! empty contact");
             return false;
         }
@@ -178,8 +205,7 @@ public class ContactsApplication {
         // print all contacts
 
         try {
-            if(contacts==null)
-            {
+            if (contacts == null) {
                 System.out.println("no contacts available please add one");
                 return false;
             }
@@ -191,7 +217,7 @@ public class ContactsApplication {
         }
 
 
-        if(debugVariable)System.out.println("contacts size"+contacts.size());
+        if (debugVariable) System.out.println("contacts size" + contacts.size());
 
         contacts.forEach(contact -> {
             showSingleContact(contact);
@@ -207,7 +233,7 @@ public class ContactsApplication {
         //check for closing files and stream readers and writers if any
         // and close
 
-        serializeCurrentData(contacts,filename);
+        serializeCurrentData(contacts, filename);
         System.gc();
         //Runtime.getRuntime().runFinalization();
         System.exit(0);
@@ -309,7 +335,7 @@ public class ContactsApplication {
 
             switch (optionInput) {
                 case 1:
-                    this.addContact(getInputDetails(null,null),-1);
+                    this.addContact(getInputDetails(null, null), -1);
                     break;
                 case 2:
                     this.updateContact(null);
@@ -338,10 +364,6 @@ public class ContactsApplication {
 
 
     }
-
-
-
-
 
 
 }
