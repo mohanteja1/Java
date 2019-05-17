@@ -14,13 +14,13 @@ public class ContactsApplication {
     private String filename = "contacts.txt";
 
     private Contact selectContact() {
-        int optionOfSelectCOntact;
+        int optionOfSelectContact;
         String identifier;
         System.out.println("Please choose the contact from following option: \n\t 1. search contact \n\t 2.select from table \n\t press any other key to return to main menu");
         Scanner scanner = new Scanner(System.in);
-        optionOfSelectCOntact = scanner.nextInt();
+        optionOfSelectContact = scanner.nextInt();
 
-        switch (optionOfSelectCOntact) {
+        switch (optionOfSelectContact) {
             case 1:
                 //return contact through Search function
                 System.out.println("select the variable you want to search for the contact\n\t 1. name \n\t 2. phone number \n\t 3. personal Email \n\t 4. work email \n\t 5. address");
@@ -113,7 +113,7 @@ public class ContactsApplication {
         //1. recieve old contact
         //show details of old contact
         System.out.println("current contact details :");
-        showSingleContact(oldContact);
+        showSingleContact(oldContact,contacts.indexOf(oldContact));
         //2. getDetails
 
         Contact contact = getInputDetails(null,null);
@@ -136,6 +136,7 @@ public class ContactsApplication {
         //3. show that particular contact
         showAllContacts();
         return;
+
     }
 
     private boolean removeContact(Contact contact) {
@@ -145,7 +146,7 @@ public class ContactsApplication {
         //2. show contact
 
         System.out.println("the contact you selected :");
-        showSingleContact(contact);
+        showSingleContact(contact,contacts.indexOf(contact));
 
         //4 ask for confirmation
 
@@ -167,7 +168,8 @@ public class ContactsApplication {
 
     }
 
-    private int searchContact(String identifier, int identifierType) {
+    //to test change this to public ,, after that put it in private
+    public int searchContact(String identifier, int identifierType) {
         //failure cases
         if (contacts == null) {
             return -1;
@@ -206,23 +208,26 @@ public class ContactsApplication {
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
-        
+
         //actual search
 
 
         return -1;
     }
 
-    private boolean showSingleContact(Contact contact) {
+    private boolean showSingleContact(Contact contact,int index) {
 
         if (contact == null) {
             System.out.println("no details to show ,! empty contact");
             return false;
         }
 
-        System.out.println("--------------------------------------------------------------------------------------------------------");
-        System.out.println("| " + contact.getName() + " | " + contact.getPhoneNumber() + " | " + contact.getPersonalEmail() + " | " + contact.getWorkEmail() + " | " + contact.getAddress());
-        System.out.println("--------------------------------------------------------------------------------------------------------");
+        Contact contact1 =contacts.get(0);
+        //adjust dash line using total length it has to print
+        int size = contact1.getName().length()+contact.getAddress().length()+contact1.getWorkEmail().length()+contact1.getAddress().length()+contact1.getPersonalEmail().length() + 18 ;
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.println("| " + index +"| "+ contact.getName() + " | " + contact.getPhoneNumber() + " | " + contact.getPersonalEmail() + " | " + contact.getWorkEmail() + " | " + contact.getAddress());
+        System.out.println("---------------------------------------------------------------------------------");
 
         return true;
 
@@ -246,9 +251,11 @@ public class ContactsApplication {
 
         if (debugVariable) System.out.println("contacts size" + contacts.size());
 
-        contacts.forEach(contact -> {
-            showSingleContact(contact);
-        });
+
+        int i=1;
+       for(Contact contact:contacts){
+           showSingleContact(contact,i++);
+       }
 
         return true;
 
@@ -374,7 +381,7 @@ public class ContactsApplication {
                 case 4:
                     Contact contact=selectContact();
                     System.out.println("Results of your search :");
-                    showSingleContact(contact);
+                    showSingleContact(contact,contacts.indexOf(contact));
                     break;
                 case 5:
                     showAllContacts();
@@ -393,6 +400,14 @@ public class ContactsApplication {
         }
 
 
+    }
+
+    public void initialieApplication(){
+        //this method is written for sole purpose of testing
+        Thread thread = new Thread(() -> {
+            deserializePreviousData("contacts.txt");
+        });
+        thread.start();
     }
 
 

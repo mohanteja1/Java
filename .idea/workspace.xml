@@ -4,6 +4,9 @@
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contactsApplication/DriverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactsApplication/DriverApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,24 +23,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/contactsApplication/DriverApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="376" column="67" selection-start-line="376" selection-start-column="67" selection-end-line="376" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3506#3507#0" expanded="true" />
-                <element signature="e#3546#3547#0" expanded="true" />
-                <element signature="e#4375#4376#0" expanded="true" />
-                <element signature="e#4434#4435#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -45,8 +41,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="765">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="227" selection-start-line="227" selection-end-line="227" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactsApplication/Contact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+              <folding>
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,11 +141,11 @@
         <option value="$PROJECT_DIR$/src/week2/Collections/Map/HashMap/SynchronizingHashMap.java" />
         <option value="$PROJECT_DIR$/src/week2/MultiThreading/ThreadMethods.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Set/TreeSet/TreesetBasics.java" />
-        <option value="$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest2.java" />
-        <option value="$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest.java" />
         <option value="$PROJECT_DIR$/contacts.txt" />
         <option value="$PROJECT_DIR$/src/contactsApplication/Contact.java" />
         <option value="$PROJECT_DIR$/src/contactsApplication/DriverApplication.java" />
+        <option value="$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest2.java" />
+        <option value="$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java" />
       </list>
     </option>
@@ -160,6 +184,17 @@
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contactsApplication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="contactsApplication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,39 +253,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DriverApplication">
+  <component name="RunManager" selected="JUnit.ContactsApplicationTest.testSearchContact">
     <configuration name="DriverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="contactsApplication.DriverApplication" />
       <module name="IdeaProjects" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="contactsApplication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedHashMapBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.Collections.Map.LinkedHashMap.LinkedHashMapBasics" />
-      <module name="IdeaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.Collections.Map.LinkedHashMap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeMapBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.Collections.Map.TreeMap.TreeMapBasics" />
-      <module name="IdeaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.Collections.Map.TreeMap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -271,6 +280,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContactsApplicationTest2.testContactClassMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IdeaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactsApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactsApplication" />
+      <option name="MAIN_CLASS_NAME" value="contactsApplication.ContactsApplicationTest2" />
+      <option name="METHOD_NAME" value="testContactClassMethods" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactsApplicationTest.runApplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IdeaProjects" />
       <extension name="coverage">
@@ -287,6 +312,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContactsApplicationTest.testSearchContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IdeaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactsApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactsApplication" />
+      <option name="MAIN_CLASS_NAME" value="contactsApplication.ContactsApplicationTest" />
+      <option name="METHOD_NAME" value="testSearchContact" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Java Scratch" singleton="false">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -294,11 +335,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContactsApplicationTest.testSearchContact" />
         <item itemvalue="Application.DriverApplication" />
+        <item itemvalue="JUnit.ContactsApplicationTest2.testContactClassMethods" />
         <item itemvalue="JUnit.ContactsApplicationTest.runApplication" />
         <item itemvalue="Application.TreesetBasics" />
-        <item itemvalue="Application.TreeMapBasics" />
-        <item itemvalue="Application.LinkedHashMapBasics" />
       </list>
     </recent_temporary>
   </component>
@@ -312,13 +353,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557143224562</updated>
-    </task>
-    <task id="LOCAL-00001" summary="created repository structure">
-      <created>1557145226302</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1557145226302</updated>
     </task>
     <task id="LOCAL-00002" summary="created repository structure">
       <created>1557147474574</created>
@@ -656,12 +690,46 @@
       <option name="project" value="LOCAL" />
       <updated>1558083857037</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="contactApplication-&gt; completed">
+      <created>1558087342038</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1558087342040</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactsApplicationTest_runApplication - 2019.05.17 at 11h 49m 49s.xml">
-      <configuration name="ContactsApplicationTest.runApplication" configurationId="JUnit" />
+    <history-entry file="ContactsApplicationTest_testSearchContact - 2019.05.17 at 17h 24m 00s.xml">
+      <configuration name="ContactsApplicationTest.testSearchContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest_testSearchContact - 2019.05.17 at 17h 56m 06s.xml">
+      <configuration name="ContactsApplicationTest.testSearchContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest_testSearchContact - 2019.05.17 at 17h 56m 52s.xml">
+      <configuration name="ContactsApplicationTest.testSearchContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest_testSearchContact - 2019.05.17 at 17h 59m 48s.xml">
+      <configuration name="ContactsApplicationTest.testSearchContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest_testSearchContact - 2019.05.17 at 18h 01m 19s.xml">
+      <configuration name="ContactsApplicationTest.testSearchContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest_testSearchContact - 2019.05.17 at 18h 02m 08s.xml">
+      <configuration name="ContactsApplicationTest.testSearchContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest_testSearchContact - 2019.05.17 at 18h 03m 39s.xml">
+      <configuration name="ContactsApplicationTest.testSearchContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest2_testContactClassMethods - 2019.05.17 at 18h 11m 36s.xml">
+      <configuration name="ContactsApplicationTest2.testContactClassMethods" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest2_testContactClassMethods - 2019.05.17 at 18h 11m 47s.xml">
+      <configuration name="ContactsApplicationTest2.testContactClassMethods" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsApplicationTest_testSearchContact - 2019.05.17 at 18h 22m 55s.xml">
+      <configuration name="ContactsApplicationTest.testSearchContact" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -677,7 +745,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14372164" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23676248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -686,15 +754,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.31096563" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.12929623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.24549918" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32405892" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.5008183" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.15057284" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.14901665" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -706,8 +774,33 @@
       <window_info anchor="right" id="Maven" order="8" weight="0.04709576" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="revised project structure" />
     <MESSAGE value="refactored the naming conventions for package Collections from 1.Collections" />
     <MESSAGE value="lists" />
     <MESSAGE value="Arraylists" />
@@ -732,7 +825,8 @@
     <MESSAGE value="contactApplication-&gt; selectContact" />
     <MESSAGE value="contactApplication-&gt; SearchContact finished" />
     <MESSAGE value="contactApplication-&gt; updateContact finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="contactApplication-&gt; updateContact finished" />
+    <MESSAGE value="contactApplication-&gt; completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="contactApplication-&gt; completed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Java$DriverApplication.ic" NAME="DriverApplication Coverage Results" MODIFIED="1558069724794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -740,14 +834,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/LinkedList/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/Stack/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1119,27 +1205,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest2.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="78">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contacts.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contactsApplication/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="170">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
           <folding>
             <element signature="e#1063#1064#0" expanded="true" />
             <element signature="e#1090#1091#0" expanded="true" />
@@ -1149,21 +1232,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contactsApplication/DriverApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/contactsApplication/ContactsApplicationTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="376" column="67" selection-start-line="376" selection-start-column="67" selection-end-line="376" selection-end-column="67" />
+        <state relative-caret-position="212">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3506#3507#0" expanded="true" />
-            <element signature="e#3546#3547#0" expanded="true" />
-            <element signature="e#4375#4376#0" expanded="true" />
-            <element signature="e#4434#4435#0" expanded="true" />
           </folding>
         </state>
       </provider>
