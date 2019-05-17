@@ -100,7 +100,6 @@ public class ContactsApplication {
 
         if (debugVariable) System.out.println("added contact :" + contacts);
 
-
         return true;
     }
 
@@ -111,20 +110,31 @@ public class ContactsApplication {
         //show details of old contact
         System.out.println("current contact details :");
         showSingleContact(oldContact);
-
         //2. getDetails
 
+        Contact contact = getInputDetails(null,null);
 
         //3. update the contact
 
+        if(contact!=null){
+            int index= contacts.indexOf(oldContact);
+            contacts.remove(oldContact);
+            contacts.add(index,contact);
+            contacts.sort(new Comparator<Contact>() {
+                @Override
+                public int compare(Contact o1, Contact o2) {
+                    return o1.getName().compareTo(o2.getName());
+                }
+            });
+
+        }
 
         //3. show that particular contact
-
-
+        showAllContacts();
         return;
     }
 
-    private void removeContact() {
+    private boolean removeContact(Contact contact) {
 
         //1. getContactId
 
@@ -137,6 +147,7 @@ public class ContactsApplication {
         //5. delete
 
 
+        return true;
     }
 
     private int searchContact(String identifier, int identifierType) {
@@ -338,10 +349,11 @@ public class ContactsApplication {
                     this.addContact(getInputDetails(null, null), -1);
                     break;
                 case 2:
-                    this.updateContact(null);
+                    System.out.println("update contact");
+                    this.updateContact(selectContact());
                     break;
                 case 3:
-                    this.removeContact();
+                    this.removeContact(selectContact());
                     break;
                 case 4:
                     this.searchContact(null, 0);
