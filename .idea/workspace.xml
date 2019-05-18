@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/Collections/Map/HashMap/HashMapBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/Map/HashMap/HashMapBasics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/WebSites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/WebSites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="582" column="1" lean-forward="true" selection-start-line="582" selection-start-column="1" selection-end-line="582" selection-end-column="1" />
+            <state relative-caret-position="92">
+              <caret line="337" column="56" selection-start-line="337" selection-start-column="56" selection-end-line="337" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#307#308#0" expanded="true" />
@@ -376,13 +372,6 @@
       <option name="presentableId" value="Default" />
       <updated>1557143224562</updated>
     </task>
-    <task id="LOCAL-00004" summary="created repository structure">
-      <created>1557147776560</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1557147776560</updated>
-    </task>
     <task id="LOCAL-00005" summary="jvm,jre,jdk completed">
       <created>1557222106254</created>
       <option name="number" value="00005" />
@@ -719,7 +708,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558162268629</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="contactApplication2-&gt; completed coding using hashmaps">
+      <created>1558176868006</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1558176868006</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -776,7 +772,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.54664487" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.4680851" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -823,7 +819,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lists" />
     <MESSAGE value="Arraylists" />
     <MESSAGE value="Arraylists completed" />
     <MESSAGE value="linkedlist" />
@@ -848,7 +843,8 @@
     <MESSAGE value="contactApplication-&gt; updateContact finished" />
     <MESSAGE value="contactApplication-&gt; completed" />
     <MESSAGE value="contactApplication2-&gt; completed design ..coding" />
-    <option name="LAST_COMMIT_MESSAGE" value="contactApplication2-&gt; completed design ..coding" />
+    <MESSAGE value="contactApplication2-&gt; completed coding using hashmaps" />
+    <option name="LAST_COMMIT_MESSAGE" value="contactApplication2-&gt; completed coding using hashmaps" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Java$DriverApplication.ic" NAME="DriverApplication Coverage Results" MODIFIED="1558069724794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -1286,8 +1282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="582" column="1" lean-forward="true" selection-start-line="582" selection-start-column="1" selection-end-line="582" selection-end-column="1" />
+        <state relative-caret-position="92">
+          <caret line="337" column="56" selection-start-line="337" selection-start-column="56" selection-end-line="337" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#307#308#0" expanded="true" />

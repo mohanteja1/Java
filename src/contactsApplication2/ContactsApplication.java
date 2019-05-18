@@ -69,7 +69,7 @@ class Contact implements Comparable<Contact>, Serializable {
 
 
 
-
+//------------------------------contacts application-----------------------------------------------
 
 
 class ContactsApplication {
@@ -87,8 +87,8 @@ class ContactsApplication {
     HashMap<String, Integer> emails;
     HashMap<String,Integer> phoneNumbers;
 
-    //----------------------------------------------printingPart------------------------------------------------
-    private boolean showSingleContact(Contact contact,int index) {
+    //----------------------------------------------printingPart---------------------------------------------------------------------------------/
+    private boolean showSingleContact(Contact contact,int index) {                                                                               //
 
         if (contact == null) {
             System.out.println("no details to show ,! empty contact");
@@ -301,8 +301,8 @@ class ContactsApplication {
         emails.put(contact.getEmail(),hashcode);
         phoneNumbers.put(contact.getMobile(),hashcode);
         if (debugSwitch) System.out.println("added contact :" + contacts);
-
         serialize();
+        deserialize();
         return true;
     }
 
@@ -334,6 +334,10 @@ class ContactsApplication {
 
         //1. recieve old contact
         //show details of old contact
+        if(oldContact==null){
+            System.out.println("no such contact found");
+            return;
+        }
         System.out.println("current contact details :");
         showSingleContact(oldContact,oldContact.hashCode());
         //2. getDetails
@@ -347,9 +351,11 @@ class ContactsApplication {
             contacts.remove(oldContact.hashCode());
             contacts.put(contact.hashCode(),contact);
 
+
         }
 
         serialize();
+        deserialize();
         //3. show that particular contact
         System.out.println("the contact is updated as :");
         showSingleContact(contact,contact.hashCode());
@@ -484,6 +490,17 @@ class ContactsApplication {
         }
     }
 
+    private void deserialize(){
+        ExecutorService deserializaionService = Executors.newSingleThreadExecutor();
+        Runnable task = new MemoryStorage(3,false,true,totalContactsHashStoreFileName);
+        deserializaionService.submit(task);
+        deserializaionService.shutdown();
+        //wait for the threads to close
+        while(!deserializaionService.isTerminated()){
+
+        }
+
+    }
     private void exit() {
 
         //check for closing files and stream readers and writers if any
@@ -511,24 +528,14 @@ class ContactsApplication {
 
         // deserialize data on boot/start
 
-        ExecutorService deserializaionService = Executors.newSingleThreadExecutor();
-
-        Runnable task = new MemoryStorage(3,false,true,totalContactsHashStoreFileName);
-        deserializaionService.submit(task);
-
-
-        deserializaionService.shutdown();
-
+        deserialize();
 
         while (doNotExitVariable) {
             Scanner scanner = new Scanner(System.in);
             menuDisplay(true);
             optionInput = scanner.nextInt();
 
-            //wait for the threads to close
-            while(!deserializaionService.isTerminated()){
 
-            }
             //menu selection
 
             switch (optionInput) {
@@ -582,7 +589,7 @@ class ContactsApplication {
 
 }
 
-
+//--------------------------------------------------------------Driver--------------------------------------------------------------------
 
 class DriverApplication {
     public static void main(String args[]) {
