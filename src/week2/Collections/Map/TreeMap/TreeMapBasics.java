@@ -39,7 +39,6 @@ public class TreeMapBasics {
         System.out.println(ipindexing.firstEntry().toString());
         System.out.println(ipindexing.lastEntry().toString());
 
-
         //find the key who is just less than the lower than the provided entry
         System.out.println("find the key who is just less than the lower than the provided entry 35:");
 

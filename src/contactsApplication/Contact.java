@@ -97,9 +97,4 @@ public class Contact implements Cloneable,Comparable<Contact>, Serializable {
         return this.name.compareTo(o.name);
     }
 
-
-
-
-
-
 }
