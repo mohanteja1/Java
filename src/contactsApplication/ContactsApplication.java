@@ -259,7 +259,6 @@ public class ContactsApplication {
 
         return true;
 
-
     }
 
     private void exit() {

@@ -34,8 +34,29 @@ public class WebSites implements Comparable<week2.Collections.Map.LinkedHashMap.
         }
 
 
-
-
+    public String getIp() {
+        return ip;
     }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public String getDomainName() {
+        return domainName;
+    }
+
+    public void setDomainName(String domainName) {
+        this.domainName = domainName;
+    }
+
+    public int getUsers() {
+        return users;
+    }
+
+    public void setUsers(int users) {
+        this.users = users;
+    }
+}
 
 

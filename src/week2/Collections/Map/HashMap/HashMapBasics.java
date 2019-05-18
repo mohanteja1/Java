@@ -15,7 +15,8 @@ public class HashMapBasics {
         wordsHashCode.put("mohanteja5","mohanteja5".hashCode());
         wordsHashCode.put("mohanteja6","mohanteja6".hashCode());
 
-        System.out.println(wordsHashCode);
+        System.out.println(wordsHashCode.get("mohan"));
+
 
 
 

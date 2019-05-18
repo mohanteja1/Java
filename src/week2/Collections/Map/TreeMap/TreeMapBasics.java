@@ -4,6 +4,7 @@ package week2.Collections.Map.TreeMap;
 import week2.Collections.Map.LinkedHashMap.WebSites;
 
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -24,9 +25,20 @@ public class TreeMapBasics {
         ipindexing.put(34,new WebSites("123.0.22.55","redit.com",421));
         ipindexing.put(35,new WebSites("123.0.22.44","netflix.com",424));
         ipindexing.put(36,new WebSites("123.0.44.33","amazon.com",445));
-        ipindexing.put(37,new WebSites("123.0.22.33","random.com",467));
+        ipindexing.put(37,new WebSites("123.0.44.33","random.com",467));
         ipindexing.put(38,new WebSites("123.0.23.55","abandonware.com",433));
         ipindexing.put(39,new WebSites("123.0.45.44","ransomeware.com",498));
+
+        //move the contents to hashmap
+
+        HashMap<String,Integer> ipPortTable=new HashMap<String, Integer>();
+
+        ipindexing.forEach((port,website)->{
+            ipPortTable.put(website.getIp(),port);
+        });
+
+        System.out.println("detailsof iptable :" + ipPortTable);
+
 
         System.out.println("searching for website with port 33:");
 
