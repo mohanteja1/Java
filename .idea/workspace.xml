@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44941e9f-6565-4870-b2e8-7393f2264430" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/contactsApplication/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contactsApplication2/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,49 +19,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="337" column="56" selection-start-line="337" selection-start-column="56" selection-end-line="337" selection-end-column="56" />
+            <state relative-caret-position="-2380">
+              <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#684#685#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-                <element signature="e#4602#4603#0" expanded="true" />
-                <element signature="e#4637#4638#0" expanded="true" />
-                <element signature="e#4678#4679#0" expanded="true" />
-                <element signature="e#4718#4719#0" expanded="true" />
-                <element signature="e#4758#4759#0" expanded="true" />
-                <element signature="e#4798#4799#0" expanded="true" />
-                <element signature="e#4853#4854#0" expanded="true" />
-                <element signature="e#4903#4904#0" expanded="true" />
-                <element signature="e#4945#4946#0" expanded="true" />
-                <element signature="e#4987#4988#0" expanded="true" />
-                <element signature="e#5046#5047#0" expanded="true" />
-                <element signature="e#5100#5101#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contactsHash.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/contactsApplication2/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/contactsApplication/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="5" selection-start-column="5" selection-end-column="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7140">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -83,8 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/Triangle.java" />
-        <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/Multilevel.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/README.md" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/RuntimePolymorphismOrDynamicDispatch.java" />
         <option value="$PROJECT_DIR$/src/week1/OOPsFundamentals/polymorphism/README.md" />
@@ -134,6 +135,8 @@
         <option value="$PROJECT_DIR$/src/week2/Collections/Map/LinkedHashMap/WebSites.java" />
         <option value="$PROJECT_DIR$/src/week2/Collections/Map/TreeMap/TreeMapBasics.java" />
         <option value="$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/contactsApplication/Readme.md" />
       </list>
     </option>
   </component>
@@ -177,49 +180,7 @@
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-              <item name="HashMap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-              <item name="LinkedHashMap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week2" type="462c0819:PsiDirectoryNode" />
-              <item name="Collections" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-              <item name="TreeMap" type="462c0819:PsiDirectoryNode" />
+              <item name="contactsApplication2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -371,13 +332,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557143224562</updated>
-    </task>
-    <task id="LOCAL-00005" summary="jvm,jre,jdk completed">
-      <created>1557222106254</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1557222106254</updated>
     </task>
     <task id="LOCAL-00006" summary="jvm,jre,jdk completed">
       <created>1557222697926</created>
@@ -715,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558176868006</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="contactApplication2-&gt; completed debugging">
+      <created>1558177934877</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1558177934878</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -763,7 +724,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18986385" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18986385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -772,7 +733,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.4680851" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.14075287" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -791,6 +752,35 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven" order="8" weight="0.04709576" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18986385" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.14075287" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39770868" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24549918" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.5008183" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.15057284" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.14901665" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.04709576" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -819,7 +809,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Arraylists" />
     <MESSAGE value="Arraylists completed" />
     <MESSAGE value="linkedlist" />
     <MESSAGE value="linkedlist completed" />
@@ -844,7 +833,8 @@
     <MESSAGE value="contactApplication-&gt; completed" />
     <MESSAGE value="contactApplication2-&gt; completed design ..coding" />
     <MESSAGE value="contactApplication2-&gt; completed coding using hashmaps" />
-    <option name="LAST_COMMIT_MESSAGE" value="contactApplication2-&gt; completed coding using hashmaps" />
+    <MESSAGE value="contactApplication2-&gt; completed debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="contactApplication2-&gt; completed debugging" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Java$DriverApplication.ic" NAME="DriverApplication Coverage Results" MODIFIED="1558069724794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -852,30 +842,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/Deque/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Queue/PriorityQueue/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week2/Collections/Set/HashSet/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week2/Collections/List/ArrayList/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1260,19 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contactsHash.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7837">
@@ -1280,41 +1233,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contactsHash.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/contactsApplication2/ContactsApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="337" column="56" selection-start-line="337" selection-start-column="56" selection-end-line="337" selection-end-column="56" />
+        <state relative-caret-position="-7140">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#4602#4603#0" expanded="true" />
-            <element signature="e#4637#4638#0" expanded="true" />
-            <element signature="e#4678#4679#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4758#4759#0" expanded="true" />
-            <element signature="e#4798#4799#0" expanded="true" />
-            <element signature="e#4853#4854#0" expanded="true" />
-            <element signature="e#4903#4904#0" expanded="true" />
-            <element signature="e#4945#4946#0" expanded="true" />
-            <element signature="e#4987#4988#0" expanded="true" />
-            <element signature="e#5046#5047#0" expanded="true" />
-            <element signature="e#5100#5101#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactsApplication/ContactsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2380">
+          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactsApplication2/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactsApplication/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="5" selection-start-column="5" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

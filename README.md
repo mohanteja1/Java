@@ -18,3 +18,6 @@
 ![GitHub Logo](/images/logo.png)
 
 [GitHub](http://github.com)
+
+
+System.out.println(String.join("", Collections.nCopies(30, "-")));
