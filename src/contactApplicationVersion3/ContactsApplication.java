@@ -88,7 +88,7 @@ class Contact implements Comparable<Contact>, Serializable {
 
 class ContactsApplication {
 
-    boolean debugSwitch = true;
+    boolean debugSwitch = false;
 
     String totalContactsHashStoreFileName = "contactsHash.txt";
 
@@ -648,7 +648,7 @@ class ContactsApplication {
 
 
 
-//--------------------------------------------------------------Driver--------------------------------------------------------------------
+//--------------------------------------------------------------Driver--------------------------------------------------------------------//
 
 class DriverApplication {
     public static void main(String args[]) {
