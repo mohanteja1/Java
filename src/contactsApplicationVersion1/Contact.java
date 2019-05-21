@@ -1,4 +1,4 @@
-package contactsApplication;
+package contactsApplicationVersion1;
 
 import java.io.Serializable;
 

@@ -1,16 +1,19 @@
-package contactsApplication2;
+package contactApplicationVersion3;
 
-import org.omg.CORBA.Object;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
 
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-//-----------------------------------------------------------contact class------------------------------------------------
+
+//-----------------------------------------------------------contact class -----------------------------------------------------
 class Contact implements Comparable<Contact>, Serializable {
     private String name;
     private String mobile;
     private String email;
+    private String randomString;
 
     public Contact() {
     }
@@ -19,6 +22,14 @@ class Contact implements Comparable<Contact>, Serializable {
         this.name = name;
         this.mobile = mobile;
         this.email = email;
+    }
+
+    public String getRandomString() {
+        return randomString;
+    }
+
+    public void setRandomString(String randomString) {
+        this.randomString = randomString;
     }
 
     public String getName() {
@@ -63,32 +74,53 @@ class Contact implements Comparable<Contact>, Serializable {
     public int hashCode() {
         return Objects.hash(name, mobile, email);
     }
+
+
+
 }
-//-----------------------------------------------------------contact class------------------------------------------------
+//-------------------------------------------------------------contact class------------------------------------------------//
 
 
 
 
-//------------------------------contacts application-----------------------------------------------
+//-------------------------------------------------------------contacts application------------------------------------------//
 
 
 class ContactsApplication {
 
     boolean debugSwitch = true;
 
-    String namesHashStoreFileName = "names.txt";
-    String emailHashStoreFileName = "emails.txt";
-    String phoneNumberHashStoreFileName = "phoneNumbers.txt";
     String totalContactsHashStoreFileName = "contactsHash.txt";
-    //hashmaps
 
-    HashMap<Integer, Contact> contacts;//=new HashMap<Integer, Contact>();
-    HashMap<String, Integer> names;
-    HashMap<String, Integer> emails;
-    HashMap<String,Integer> phoneNumbers;
+    // data structures : multimap and hashmap
 
-    //----------------------------------------------printingPart---------------------------------------------------------------------------------/
-    private boolean showSingleContact(Contact contact,int index) {                                                                               //
+    Multimap<String,String> searchMap ;
+    LinkedHashMap<String,Contact> contacts ;
+
+    // --------------------------------randomString generation method---------------------
+
+    public String randomStringGenerator(int lengthOfString){
+
+        String alphabetsAndNumbers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+=?" ;
+        StringBuilder randomString = new StringBuilder();
+        int randomNumber;
+       // System.out.println(alphabetsAndNumbers.length());
+        for(int i=0;i<lengthOfString;i++){
+            randomNumber = (int)(alphabetsAndNumbers.length()* Math.random());
+            //System.out.println(randomNumber);
+            randomString.append(alphabetsAndNumbers.charAt(randomNumber));
+        }
+        return randomString.toString();
+
+    }
+  //---------------------------------randomString generation method--------------------------//
+
+
+
+
+    //--------------------------------------------------------------printingPart---------------------------------------------------------------------------------//
+
+    private boolean showSingleContact(Contact contact,String index,boolean indexing) {
 
         if (contact == null) {
             System.out.println("no details to show ,! empty contact");
@@ -96,6 +128,8 @@ class ContactsApplication {
         }
 
         //adjust tables size if possible ?
+
+        if(!indexing) index="";
 
         System.out.println("---------------------------------------------------------------------------------");
         System.out.println("| " + index +"| "+ contact.getName() + " | " + contact.getMobile() + " | " + contact.getEmail() + " | " );
@@ -105,7 +139,7 @@ class ContactsApplication {
 
     }
 
-    private boolean showAllContacts() {
+    private boolean showAllContacts(boolean indexing) {
         // print all contacts
 
         try {
@@ -120,14 +154,12 @@ class ContactsApplication {
             e.printStackTrace();
         }
 
-
         if (debugSwitch) System.out.println("contacts size" + contacts.size());
 
-
-        contacts.forEach((hashcode,contact)->{
-            showSingleContact(contact,hashcode);
-        });
-
+        int i=1;
+        for ( Map.Entry<String,Contact> contact: contacts.entrySet()) {
+            showSingleContact(contact.getValue(),Integer.toString(i++),indexing);
+        }
 
         return true;
 
@@ -149,11 +181,13 @@ class ContactsApplication {
     }
 
 
-    //----------------------------------------------printingPart------------------------------------------------
+    //------------------------------------------------------------------------------printingPart-------------------------------------------------------------//
 
 
 
-    //--------------------------------------------Inner Class don't cross------------------------------------------
+    //-----------------------------------------------------------------------------Inner Class don't cross-------------------------------------------------//
+    //this inner class handles the memory writings and readings
+    // create an instance and pass your data and filename parameters
     class MemoryStorage implements Runnable {
         int task;
         boolean serialize;
@@ -200,7 +234,7 @@ class ContactsApplication {
             this.filename=filename;
         }
 
-        private void serializeCurrentData(HashMap<Integer,Contact> contacts, String fileName) {
+        private void serializeCurrentData(HashMap<String,Contact> contacts, String fileName) {
 
             try {
                 FileOutputStream outputStream = new FileOutputStream(fileName);
@@ -230,26 +264,28 @@ class ContactsApplication {
                     File contactsFile = new File(totalContactsHashStoreFileName);
                     contactsFile.createNewFile();
                     ObjectInputStream objectInputStream1 = new ObjectInputStream(new FileInputStream(filename));
-                    contacts = (HashMap<Integer, Contact>) objectInputStream1.readObject();
+                    contacts = (LinkedHashMap<String, Contact>) objectInputStream1.readObject();
                     objectInputStream1.close();
 
                 }
 
                 if (task == 2 || task == 3) {
 
-                    names = new HashMap<String, Integer>();
-                    emails= new HashMap<String, Integer>();
-                    phoneNumbers= new HashMap<String, Integer>();
-                    contacts.forEach((hashcode,contact)->{
-                        names.put(contact.getName(),hashcode);
-                        emails.put(contact.getEmail(),hashcode);
-                        phoneNumbers.put(contact.getMobile(),hashcode);
+                    searchMap =ArrayListMultimap.create();
+
+                    contacts.forEach((randomKey,contact)->{
+                       searchMap.put(contact.getName(),randomKey);
+                       searchMap.put(contact.getEmail(),randomKey);
+                       searchMap.put(contact.getMobile(),randomKey);
 
                     });
 
                 }
 
-            } catch (FileNotFoundException e) {
+            } catch(EOFException e){
+                contacts = new LinkedHashMap<String, Contact>();
+                e.printStackTrace();
+            }catch (FileNotFoundException e) {
                 System.out.println(e.getMessage());
                 e.printStackTrace();
             } catch (IOException e) {
@@ -263,7 +299,7 @@ class ContactsApplication {
 
         }
     }
-    //---------------------------------------------------InnerClass don't cross----------------------------------------------------------------
+    //----------------------------------------------------------------------------InnerClass don't cross----------------------------------------------------------------//
 
 
     private boolean addContact(Contact contact, int index) {
@@ -275,17 +311,12 @@ class ContactsApplication {
 
         try {
             if (contacts == null) {
-                contacts = new HashMap<Integer, Contact>();
+                contacts = new LinkedHashMap<String, Contact>();
             }
-            if(names==null){
-                names = new HashMap<String, Integer>();
+            if (searchMap==null){
+                searchMap =ArrayListMultimap.create();
             }
-            if(emails==null){
-                emails=new HashMap<String, Integer>();
-            }
-            if(phoneNumbers==null){
-                phoneNumbers= new HashMap<String, Integer>();
-            }
+
 
         } catch (NullPointerException e) {
             System.out.println("cannot initialize hash Maps");
@@ -294,25 +325,26 @@ class ContactsApplication {
             return false;
         }
 
+        String randomString =contact.getRandomString();
 
-        int hashcode =contact.hashCode();
-        contacts.put(hashcode,contact);
-        names.put(contact.getName(),hashcode);
-        emails.put(contact.getEmail(),hashcode);
-        phoneNumbers.put(contact.getMobile(),hashcode);
+        contacts.put(randomString,contact);
+
+        searchMap.put(contact.getName(),randomString);
+        searchMap.put(contact.getMobile(),randomString);
+        searchMap.put(contact.getEmail(),randomString);
+
+
         if (debugSwitch) System.out.println("added contact :" + contacts);
         serialize();
-        deserialize();
         return true;
     }
 
-    private Contact getInputDetails(Contact oldContact, Integer[] optionArray) {
+    private Contact getInputDetails(Contact oldContact, Integer[] optionArray,boolean setRandomString) {
 
         //get the details for new contact
         //Ask for details
         Scanner scanner = new Scanner(System.in);
         Contact contact = new Contact();
-        //name :
         System.out.println("Enter the details: ");
         System.out.println("name:");
         contact.setName(scanner.nextLine());
@@ -320,9 +352,27 @@ class ContactsApplication {
         contact.setMobile(scanner.nextLine());
         System.out.println("personal email");
         contact.setEmail(scanner.nextLine());
+        String randomString;
+        if(setRandomString) {
+            if(contacts==null||contacts.size()==0){
+                randomString = randomStringGenerator(7);
+            }
+            else{
+            while (true) {
+                randomString = randomStringGenerator(7);
+                if (!contacts.containsKey(randomString)) {
+                    break;
+                }
+
+            }
+            }
+
+            contact.setRandomString(randomString);
+        }
 
         if (debugSwitch)
             System.out.println("current contact : " + contact.toString());
+
 
         return contact;
 
@@ -339,37 +389,44 @@ class ContactsApplication {
             return;
         }
         System.out.println("current contact details :");
-        showSingleContact(oldContact,oldContact.hashCode());
+        showSingleContact(oldContact,"1" ,true);
         //2. getDetails
 
-        Contact contact = getInputDetails(null,null);
+        Contact contact = getInputDetails(oldContact,null,false);
 
         //3. update the contact
 
         if(contact!=null){
 
-            contacts.remove(oldContact.hashCode());
-            contacts.put(contact.hashCode(),contact);
-
+            //remove the old contact and add the new modified contact
+            contacts.remove(oldContact.getRandomString());
+            contacts.put(contact.getRandomString(),contact);
 
         }
 
+        //serialize once so that data cannot be lost on unnecessary closing and de-serializing again
         serialize();
         deserialize();
         //3. show that particular contact
         System.out.println("the contact is updated as :");
-        showSingleContact(contact,contact.hashCode());
+        showSingleContact(contact,"1",true);
         return;
 
     }
 
-    //----------------------------------------------update contact---------------------------------------
+    //----------------------------------------------------------------update contact---------------------------------------//
 
-    //---------------------------------------------select and search implementation------------------------------
+    //------------------------------------------------------------select and search implementation------------------------------------------------------//
 
-    private Contact selectContact() {
-        int optionOfSelectContact,hashcode;
+    private Contact selectContact(int optionOfSelection) {
+        //working
+        // 1. user selects the contact through : 1. inputing the index selected by displaying all the contacts
+        //                                       2. by searching the contact
+
+
+        int optionOfSelectContact,tableIndex;
         String identifier;
+        ArrayList<String> searchResults;
         System.out.println("Please choose the contact from following option: \n\t 1. search contact \n\t 2. select from table \n\t press any other key to return to main menu");
         Scanner scanner = new Scanner(System.in);
         optionOfSelectContact = scanner.nextInt();
@@ -385,17 +442,32 @@ class ContactsApplication {
                 }
                 System.out.println("please enter key word for the choosen type");
                 identifier=scanner.next();
-                hashcode =searchContact(identifier,identifierType);
-                if(debugSwitch)System.out.println("index :" + hashcode);
-                if(hashcode==-1)return null;
-                return contacts.get(hashcode);
+
+                searchResults= new ArrayList<String>(searchContact(identifier,identifierType));
+
+                if(debugSwitch)System.out.println("results :" + searchResults);
+
+                if(searchResults == null){ System.out.println("no results found matching "); return null;}
+
+                if(searchResults.size()==1)return contacts.get(searchResults.get(0));
+
+                int i=1;
+                for (String randomString : searchResults) {
+                    if(contacts.containsKey(randomString)){
+                        showSingleContact(contacts.get(randomString),Integer.toString(i++),true);
+                    }
+                }
+                System.out.println("select a contact from the multiple results");
+
+                tableIndex=Integer.parseInt(scanner.next());
+                return contacts.get(searchResults.get(tableIndex-1));
             case 2:
                 // return contact from table index
-                showAllContacts();
+                showAllContacts(true);
                 System.out.println("please select the index of the required contact from above table");
-                int tableIndex= Integer.parseInt(scanner.next());
-                hashcode=(int)contacts.keySet().toArray()[tableIndex];
-                return contacts.get(hashcode);
+                tableIndex= Integer.parseInt(scanner.next());
+                searchResults=new ArrayList<String>(contacts.keySet());
+                return contacts.get(searchResults.get(tableIndex-1));
             default:
                 System.out.println("returning to main menu");
                 return null;
@@ -403,49 +475,34 @@ class ContactsApplication {
     }
 
 
-                                  //-------------search-----------------------
+    //------------------------------------------------------------------------------------search-------------------------------------------//
 
-    private int searchContact(String identifier, int identifierType) {
+    private Collection<String> searchContact(String identifier, int identifierType) {
         //failure cases
         if (contacts == null) {
-            return -1;
+            return null;
         }
         if (contacts.size() == 0) {
-            return -1;
+            return null;
         }
         if (identifier == null || identifierType == -1) {
-            return -1;
+            return null;
         }
 
         int hashcode;
         //actual search
-        switch(identifierType){
-
-            case 1:
-                  if(names.containsKey(identifier))
-                      return names.get(identifier).hashCode();
-                  break;
-            case 2:
-                if(phoneNumbers.containsKey(identifier))
-                  return phoneNumbers.get(identifier).hashCode();
-                else break;
-            case 3:
-                if(emails.containsKey(identifier))
-                  return emails.get(identifier).hashCode();
-                else break;
+        if(searchMap.containsKey(identifier)){
+            return searchMap.get(identifier);
         }
 
-
         //actual search
-
-
-        return -1;
+        return null;
     }
 
 
-    //---------------------------------------------select and search implementation------------------------------
+    //----------------------------------------------------------------------------------------select and search implementation-----------------------------------------//
 
-   //----------------------------------------------remove contact----------------------------------------------
+    //---------------------------------------------------------------------------------------remove contact------------------------------------------------------------//
 
     private boolean removeContact(Contact contact) {
 
@@ -454,7 +511,7 @@ class ContactsApplication {
         //2. show contact
 
         System.out.println("the contact you selected :");
-        showSingleContact(contact,contact.hashCode());
+        showSingleContact(contact,"1",true);
 
         //4 ask for confirmation
 
@@ -464,7 +521,7 @@ class ContactsApplication {
 
         //5. delete
         if(confirmation.equalsIgnoreCase("y")) {
-            contacts.remove(contact.hashCode());
+            contacts.remove(contact.getRandomString());
             System.out.println("contact removed");
             serialize();
             return true;
@@ -477,8 +534,10 @@ class ContactsApplication {
 
     }
 
-    //----------------------------------------------remove contact----------------------------------------------
-    //---------------------------------------------exit--------------------------------------------------
+    //------------------------------------------------------------------------------------remove contact--------------------------------------------------------------//
+
+
+    //----------------------------------------------------------------------exit------------------------------------------------------------------//
 
     private void serialize(){
         Runnable task = new MemoryStorage(1,true,false,totalContactsHashStoreFileName);
@@ -505,11 +564,10 @@ class ContactsApplication {
 
         //check for closing files and stream readers and writers if any
         // and close
-
-
+        //serialize the data once before closing
         serialize();
-        //serializeCurrentData(contacts, null);
         System.gc();
+
         //Runtime.getRuntime().runFinalization();
         System.exit(0);
 
@@ -524,7 +582,7 @@ class ContactsApplication {
         // variables
         boolean doNotExitVariable = true;
         int optionInput = 0;
-        final int NO_OF_THREADS = 4;
+        final int NO_OF_THREADS = 1;
 
         // deserialize data on boot/start
 
@@ -542,30 +600,30 @@ class ContactsApplication {
                 case 1:
                     // add Contact
 
-                    addContact(getInputDetails(null, null), -1);
+                    addContact(getInputDetails(null, null,true), -1);
                     break;
                 case 2:
                     //update contact
 
                     System.out.println("update contact");
-                    updateContact(selectContact());
+                    updateContact(selectContact(0));
                     break;
                 case 3:
                     //remove contact
 
-                   removeContact(selectContact());
+                    removeContact(selectContact(0));
                     break;
                 case 4:
                     //search contact
 
-                    Contact contact=selectContact();
+                    Contact contact=selectContact(0);
                     if(contact==null){ System.out.println("not found"); break;}
                     System.out.println("Results of your search :");
-                    showSingleContact(contact,contact.hashCode());
+                    showSingleContact(contact,"1",false);
                     break;
                 case 5:
                     //list contacts
-                    showAllContacts();
+                    showAllContacts(true);
                     break;
                 case 6:
                     //exit application
@@ -586,8 +644,9 @@ class ContactsApplication {
 
     }
 
-
 }
+
+
 
 //--------------------------------------------------------------Driver--------------------------------------------------------------------
 
@@ -596,6 +655,9 @@ class DriverApplication {
 
         ContactsApplication contactsApplication =new ContactsApplication();
         contactsApplication.runApplication();
+
+       // System.out.println(contactsApplication.randomStringGenerator(7));
+
 
     }
 

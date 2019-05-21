@@ -1,4 +1,4 @@
-package contactsApplication;
+package contactsApplicationVersion1;
 
 import java.io.*;
 import java.lang.reflect.Method;
@@ -16,7 +16,7 @@ public class ContactsApplication {
     private Contact selectContact() {
         int optionOfSelectContact;
         String identifier;
-        System.out.println("Please choose the contact from following option: \n\t 1. search contact \n\t 2.select from table \n\t press any other key to return to main menu");
+        System.out.println("Please choose the contact from following option: \n\t 1. search contact \n\t 2. select from table \n\t press any other key to return to main menu");
         Scanner scanner = new Scanner(System.in);
         optionOfSelectContact = scanner.nextInt();
 
@@ -408,6 +408,5 @@ public class ContactsApplication {
         });
         thread.start();
     }
-
 
 }

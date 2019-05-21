@@ -1,8 +1,4 @@
-package contactsApplication;
-
-import org.junit.Assert;
-
-import java.lang.reflect.Method;
+package contactsApplicationVersion1;
 
 import static org.junit.Assert.*;
 
@@ -22,7 +18,7 @@ public class ContactsApplicationTest {
         int value1=0,value2=0,value3=0;
 
 //        try {
-//            Method searchContact = contactsApplication.getClass().getMethod("searchContact", String.class, int.class);
+//            Method searchContact = contactsApplicationVersion1.getClass().getMethod("searchContact", String.class, int.class);
 //            searchContact.setAccessible(true);
 //            value1=(Integer)searchContact.invoke("mohanteja",1);     //since mohanteja is the first contact
 //            value2=(Integer)searchContact.invoke("randomName",1);   //since there is no name with random name so it will return -1
