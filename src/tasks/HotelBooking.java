@@ -175,10 +175,9 @@ class HotelBooking {
            2.  star rating - will be any one of (5,3,1)
            3.  amount - the total amount Rohit can spent max.*/
 
-        int testcases;
-        String value=null;
+
+
         Scanner scanner = new Scanner(System.in);
-        testcases= scanner.nextInt();
 
         int days,rating;
         double money;

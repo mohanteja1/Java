@@ -11,17 +11,23 @@ Constraints:
  Once added the events, he should be able to retrieve any particular date events by passing date as input.
 */
 
+import com.google.common.base.Strings;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
-import org.codehaus.groovy.util.ListHashMap;
-
 import java.io.*;
 import java.sql.Time;
 import java.util.Date;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+//-------------------------------------------Date class---------------------------------------------//
+
+     //brave enough define your own Date class
+
+//-------------------------------------------Date class---------------------------------------------//
+
+
 
 //--------------------------------------------Day class----------------------------------------------//
 class Day implements Comparable<Day>,Serializable {
@@ -33,28 +39,58 @@ class Day implements Comparable<Day>,Serializable {
         events= ArrayListMultimap.create();
     }
 
+    public Day(Date date) {
+        events= ArrayListMultimap.create();
+        this.date = date;
+    }
+
     public Day(String date, Multimap<Time, String> events) {
-        this.date = convertFormatedDateToDate(date);
+        this.date = convertFormatedDateToDateObject(date);
         this.events = events;
     }
 
-    public Date convertFormatedDateToDate(String Date) {
+    public static Date convertFormatedDateToDateObject(String date) {
+        //receiving format DD-MM-YYYY
 
-         return null;
+        StringTokenizer stringTokenizer = new StringTokenizer(date,"-");
+        int day=Integer.parseInt(stringTokenizer.nextToken());
+        int month=Integer.parseInt(stringTokenizer.nextToken());
+        int year = Integer.parseInt(stringTokenizer.nextToken());
+        return new Date(year,month,day);
     }
 
-    public String getDateInRequiredFormat() {
-
-        return null;
+    public static String getDateInRequiredFormat(Date date) {
+        return String.format("%d-%d-%d",date.getDay(),date.getMonth(),date.getYear());
     }
 
     public void addEvent(Time time,String eventName){
+
         this.events.put(time,eventName);
+    }
+
+    public String getDate(){
+        return getDateInRequiredFormat(this.date);
+    }
+
+    public int getNoOfEvents(){
+        return this.events.size();
+    }
+
+    public Multimap<Time, String> getEvents() {
+        return events;
     }
 
     @Override
     public int compareTo(Day o) {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Day{" +
+                "date=" + date +
+                ", events=" + events +
+                '}';
     }
 }
 //--------------------------------------------Day class----------------------------------------------//
@@ -122,7 +158,6 @@ class MemoryStorage implements Runnable {
             FileOutputStream outputStream = new FileOutputStream(fileName);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
             objectOutputStream.writeObject(data);
-
             objectOutputStream.close();
             outputStream.close();
 
@@ -150,7 +185,6 @@ class MemoryStorage implements Runnable {
                 objectInputStream1.close();
 
             }
-
 
         } catch(EOFException e){
             e.printStackTrace();
@@ -187,7 +221,7 @@ public class CalendarEvents {
         serializeService.submit(task);
         serializeService.shutdown();
         while(!serializeService.isTerminated()){
-
+            //wait for the threads to close
         }
     }
 
@@ -196,12 +230,12 @@ public class CalendarEvents {
         Runnable task = new MemoryStorage(1,false,true,dataFileName,daysWithEvents);
         deserializaionService.submit(task);
         deserializaionService.shutdown();
-        //wait for the threads to close
         while(!deserializaionService.isTerminated()){
-
+            //wait for the threads to close
         }
         MemoryStorage memoryStorage = (MemoryStorage) task;
         daysWithEvents = ((MemoryStorage) task).getDataTeBeSent();
+
 
     }
 
@@ -234,8 +268,34 @@ public class CalendarEvents {
         System.out.println("please enter your choice :");
     }
 
+    private void showSingleDayEvents(Day day){
+
+        System.out.println("---------------------------------------------------------------------------------");
+        //---------------------------------------------------------------------------------
+        //|         Date :     12-33-4444          |           No of events :         4    |
+        //---------------------------------------------------------------------------------
+        //|             11:44:00                   |123456789012345678901234567801234567890
+        System.out.println("|         Date :     " + day.getDate() +"          |           No of events :         "+ day.getNoOfEvents() + "    |" );
+        System.out.println("---------------------------------------------------------------------------------");
+        Multimap<Time,String> events=day.getEvents();
+        events.forEach((time,event)->{
+            System.out.println("|             " + time.toString() +"                   |" + event + Strings.repeat(" ",39-event.length())+ "|" );
+            System.out.println("---------------------------------------------------------------------------------");
+
+        });
 
 
+    }
+
+    private void showAllEntries(){
+
+        System.out.println("All the entries that you stored");
+        daysWithEvents.forEach((date,day)->{
+            showSingleDayEvents(day);
+        });
+
+
+    }
 
 
 
@@ -243,24 +303,49 @@ public class CalendarEvents {
 
     //------------------------------------------display part------------------------------------------------//
 
-    private void searchEventByDate(String date) {
-
-
-    }
-
-    public void getEventDetailsFromUser( ) {
+    private void searchEventByDate() {
+        System.out.println("please input the date in the format DD-MM-YYYY :");
+        String date = scanner.next();
+        if(daysWithEvents.containsKey(Day.convertFormatedDateToDateObject(date))){
+              showSingleDayEvents(daysWithEvents.get(Day.convertFormatedDateToDateObject(date)));
+        }
 
     }
 
 
 
     public void addEvent(){
-        System.out.println("Do you want to consider today's date" + );
+        String eventName;
+        Time time ;
+        Date date = Day.convertFormatedDateToDateObject(Day.getDateInRequiredFormat(new Date()));
+        System.out.println("Do you want to consider today's date :" + Day.getDateInRequiredFormat(date) + " ? Y/N");
+        if(!scanner.next().equalsIgnoreCase("Y"))
+        {
+            System.out.println("enter Date in this format DD-MM-YYYY :" );
+            date=Day.convertFormatedDateToDateObject(scanner.next());
+        }
+
+        //see if the current date is recorded
 
 
 
+        if(!daysWithEvents.containsKey(date)){
+             //if not create new day instance and it to the map
+            Day day = new Day(date);
+            daysWithEvents.put(date,day);
+        }
 
-
+        System.out.println("enter the time and name of the event \n name :");
+        eventName= scanner.next();
+        time = new Time(System.currentTimeMillis());
+        System.out.println("time: \n do you want to add the current time" + time.toString() + "? Y/N");
+        if(!scanner.next().equalsIgnoreCase("Y")){
+            System.out.println("enter time in the following format HH:MM:SS");
+            time= Time.valueOf(scanner.next());
+        }
+        daysWithEvents.get(date).addEvent(time,eventName);
+        System.out.println("event successfully added");
+        System.out.println(daysWithEvents);
     }
 
 
@@ -274,26 +359,33 @@ public class CalendarEvents {
 
         // deserialize data on boot/start ----- retrieve previous data stored in the file
         deserialize();
+        if(daysWithEvents==null){
+            //just initialize that thing
+            daysWithEvents = new TreeMap<Date, Day>();
+        }
+
+
 
         while (doNotExitVariable) {
             menuDisplay(true);
             optionInput = scanner.nextInt();
-
 
             //menu selection
 
             switch (optionInput) {
                 case 1:
                     //add event
-
+                    addEvent();
                     break;
                 case 2:
 
                     //list event of particulat day
-
+                    searchEventByDate();
                     break;
                 case 3:
                     //show all events
+
+                    showAllEntries();
 
                     break;
                 case 4:
