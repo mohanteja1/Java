@@ -10,6 +10,7 @@ class Coordiantes implements Comparable<Coordiantes> , Serializable {
     public Coordiantes(int xCoordinate, int yCoordinate) {
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
+
     }
 
     public int getxCoordinate() {
@@ -45,6 +46,14 @@ class Coordiantes implements Comparable<Coordiantes> , Serializable {
             return 1;
         else
           return 0;
+    }
+
+    public void setxCoordinate(int xCoordinate) {
+        this.xCoordinate = xCoordinate;
+    }
+
+    public void setyCoordinate(int yCoordinate) {
+        this.yCoordinate = yCoordinate;
     }
 }
 
@@ -141,13 +150,13 @@ public class ArrayListBasic {
         Coordiantes.printCmd("converted Arraylist to object Array");
         Object[] objects = arrayList.toArray();
 
-        Coordiantes[] newArray = (Coordiantes[]) objects;  //type cast
+      //  Coordiantes[] newArray = (Coordiantes[]) objects;  //type cast
 
         //<T> T[] toArray(T[] a) :It is used to return an array containing all of the elements in this list in the correct order.
 
-        Coordiantes.printCmd("converted Arraylist to Coordinates Array");
-        Coordiantes[] anotherArray1 = new Coordiantes[arrayList.size()];
-        anotherArray1=arrayList.toArray(anotherArray1);
+//        Coordiantes.printCmd("converted Arraylist to Coordinates Array");
+//        Coordiantes[] anotherArray1 = new Coordiantes[arrayList.size()];
+//        anotherArray1=arrayList.toArray(anotherArray1);
 
 
         //Object clone()  :It is used to return a shallow copy of an ArrayList.
@@ -215,9 +224,8 @@ public class ArrayListBasic {
         while(iterator.hasNext()){
 
             Coordiantes obj = iterator.next();
-
-            Coordiantes.printCmd(obj);
-
+            obj.setxCoordinate(88);
+            //Coordiantes.printCmd(obj);
 
         }
 
