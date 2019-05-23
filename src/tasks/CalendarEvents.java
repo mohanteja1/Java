@@ -275,7 +275,7 @@ public class CalendarEvents {
         //|         Date :     12-33-4444          |           No of events :         4    |
         //---------------------------------------------------------------------------------
         //|             11:44:00                   |123456789012345678901234567801234567890
-        System.out.println("|         Date :     " + day.getDate() +"          |           No of events :         "+ day.getNoOfEvents() + "    |" );
+        System.out.println("|         Date :     " + day.getDate() +"          |           No of events :            "+ day.getNoOfEvents() + "    |" );
         System.out.println("---------------------------------------------------------------------------------");
         Multimap<Time,String> events=day.getEvents();
         events.forEach((time,event)->{
