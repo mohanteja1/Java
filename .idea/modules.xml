@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IdeaProjects.iml" filepath="$PROJECT_DIR$/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.iml" filepath="$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.endpointsSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.endpointsSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.functionalTest.iml" filepath="$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.functionalTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.main.iml" filepath="$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.test.iml" filepath="$PROJECT_DIR$/.idea/modules/servletCodesByMohanteja.test.iml" />
     </modules>
   </component>
 </project>
