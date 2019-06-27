@@ -1,6 +1,6 @@
-#####CONTACT APPLICATION:
+##### CONTACT APPLICATION:
 
-######Structure:
+###### Structure:
 
                     _ _ _ _ _ _ _ _          _ _ _ _ _ _ _ _ _ _ _    
                    | addContact()  |<-----> | getContactDetails() |                  
