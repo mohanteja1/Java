@@ -21,3 +21,6 @@
 
 
 System.out.println(String.join("", Collections.nCopies(30, "-")));
+
+
+links : https://stackoverflow.com/questions/34865383/variable-used-in-lambda-expression-should-be-final-or-effectively-final
